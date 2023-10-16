@@ -1,5 +1,5 @@
-#* RStudio shortcuts and commands that will not safe your live (but definitely
-#* will make it easer)
+#* RStudio shortcuts and commands that will not safe your live 
+#* (but definitelywill make it easier)
 #* 
 #* Author:  David U. Garibay-Treviño, M.Sc.
 #* Date:    October 13th, 2023
@@ -12,6 +12,8 @@
 #* - Ctrl+Shift+R     (Windows)
 #* 
 #* You can see the outline by clicking in the icon at the right of Source!                                      #* The Beatles
+#* The level of the header
+#* 
 #* 
 #* Let's create sections!
 
@@ -27,10 +29,10 @@ remove(list = ls())
 
 # 01.02 Load libraries ----------------------------------------------------
 
-#* Snippets are parts of code that can be autocompleted while typing Tab
-#* 
-#* Write `lib` and then press tab ot generate the snippet of `library()`
-#* Then call the `dplyr` package
+# Snippets are parts of code that can be autocompleted while typing Tab
+# 
+# Write `lib` and then press tab ot generate the snippet of `library()`
+# Then call the `dplyr` package
 library(dplyr)
 library(data.table)
 library(ggplot2)
@@ -38,10 +40,10 @@ library(shiny)
 
 # 02 Snippets -------------------------------------------------------------
 
-#* This also applies to other functions, like creating functions, defining loops                                      #* The Beatles
-#* 
-#* Let's create a function that will multiply by two any number you input using
-#* a snipet
+# This also applies to other functions, like creating functions, defining loops                                      #* The Beatles
+# 
+# Let's create a function that will multiply by two any number you input using
+# a snipet
 times_2 <- function(number) {
   output <- number*2
   
