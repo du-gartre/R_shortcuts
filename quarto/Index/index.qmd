@@ -10,8 +10,8 @@ code-link: true
 code-copy: true
 title-block-banner: true
 comments: false
-# image: images/Social.png
-# include-in-header: meta.html
+image: images/Social.png
+include-in-header: meta.html
 filters:
    - lightbox
 lightbox: 
