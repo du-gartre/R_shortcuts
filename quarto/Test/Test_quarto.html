@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.353">
+<meta name="generator" content="quarto-1.3.433">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -82,11 +82,11 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
   <li><a href="#insert" id="toc-insert" class="nav-link" data-scroll-target="#insert">1. Insert</a></li>
-  <li><a href="#focus-on-panes" id="toc-focus-on-panes" class="nav-link" data-scroll-target="#focus-on-panes">2. Focus on panes</a></li>
-  <li><a href="#moving-between-tabs" id="toc-moving-between-tabs" class="nav-link" data-scroll-target="#moving-between-tabs">2. Moving between tabs</a></li>
-  <li><a href="#find-files-and-functions" id="toc-find-files-and-functions" class="nav-link" data-scroll-target="#find-files-and-functions">2. Find files and functions</a></li>
-  <li><a href="#autocompletion" id="toc-autocompletion" class="nav-link" data-scroll-target="#autocompletion">4. Autocompletion</a></li>
-  <li><a href="#running-code" id="toc-running-code" class="nav-link" data-scroll-target="#running-code">5. Running code</a></li>
+  <li><a href="#move-between-panes-and-tabs" id="toc-move-between-panes-and-tabs" class="nav-link" data-scroll-target="#move-between-panes-and-tabs">2. Move between panes and tabs</a></li>
+  <li><a href="#find-files-and-functions" id="toc-find-files-and-functions" class="nav-link" data-scroll-target="#find-files-and-functions">4. Find files and functions</a></li>
+  <li><a href="#autocompletion" id="toc-autocompletion" class="nav-link" data-scroll-target="#autocompletion">5. Autocompletion</a></li>
+  <li><a href="#running-code" id="toc-running-code" class="nav-link" data-scroll-target="#running-code">6. Running code</a></li>
+  <li><a href="#snippets" id="toc-snippets" class="nav-link" data-scroll-target="#snippets">7. Snippets</a></li>
   <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
   </ul>
@@ -140,7 +140,7 @@ Important
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Talk about the github repo!</p>
+<p>Talk about the github repo! Additional to this</p>
 <p>CTRL = ⌘ Command Alt = ⌥ Option</p>
 </div>
 </div>
@@ -209,7 +209,7 @@ Important
 </tbody>
 </table>
 <div class="callout callout-style-default callout-note callout-titled" title="Defining the default pipe in global options">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -218,13 +218,13 @@ Defining the default pipe in global options
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-2" class="callout-2-contents callout-collapse collapse show">
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>The pipe that is going to be inserted is the one preset in <code>Global Options</code>.</p>
-<p>You can preset the type of pipe you want to insert while using the previous shortcut by accessing <code>Global Options/Code/Editing</code> and ticking if you would like to use the native pipe operator.</p>
+<p>The pipe that is going to be inserted is the one defined in <code>Global Options</code>.</p>
+<p>You can preset the type of pipe you want to insert by accessing <code>Global Options/Code/Editing</code> and defining which pipe you would like to use.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="figs/pipe.png" class="img-fluid figure-img"></p>
+<p><img src="figs/pipe.png" class="img-fluid figure-img" style="width:60.0%"></p>
 <figcaption class="figure-caption">Defining the default pipe in RStudio</figcaption>
 </figure>
 </div>
@@ -245,7 +245,7 @@ Defining the default pipe in global options
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: center;">Alt+Cmd+I</td>
+<td style="text-align: center;">Alt+Ctrl+I</td>
 <td style="text-align: center;">Option+Cmd+I</td>
 </tr>
 </tbody>
@@ -264,7 +264,7 @@ Defining the default pipe in global options
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: center;">Cmd+Shift+C</td>
+<td style="text-align: center;">Ctrl+Shift+C</td>
 <td style="text-align: center;">Cmd+Shift+C</td>
 </tr>
 </tbody>
@@ -283,7 +283,7 @@ Defining the default pipe in global options
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: center;">Cmd+Shift+R</td>
+<td style="text-align: center;">Ctrl+Shift+R</td>
 <td style="text-align: center;">Cmd+Shift+R</td>
 </tr>
 </tbody>
@@ -306,6 +306,25 @@ Tip
 </ul>
 </div>
 </div>
+<table class="table">
+<caption><strong>Reindent selection</strong></caption>
+<colgroup>
+<col style="width: 52%">
+<col style="width: 47%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Windows <img src="figs/windows.png" class="img-fluid" style="width:5.0%"></th>
+<th style="text-align: center;">Mac <img src="figs/apple.png" class="img-fluid" style="width:6.5%"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Ctrl+I</td>
+<td style="text-align: center;">Cmd+I</td>
+</tr>
+</tbody>
+</table>
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -322,9 +341,10 @@ Warning
 </div>
 </div>
 </section>
-<section id="focus-on-panes" class="level1">
-<h1>2. Focus on panes</h1>
+<section id="move-between-panes-and-tabs" class="level1">
+<h1>2. Move between panes and tabs</h1>
 <hr>
+<p>In case that you want to move your cursor without taking your hands out of the keyboard, you can use the following shortcuts:</p>
 <table class="table">
 <caption><strong>Move cursor to Source Editor</strong></caption>
 <colgroup>
@@ -363,26 +383,128 @@ Warning
 </tr>
 </tbody>
 </table>
-</section>
-<section id="moving-between-tabs" class="level1">
-<h1>2. Moving between tabs</h1>
-<hr>
+<p>In my case I mainly use the shortcuts to change the cursor between the Source Editor and the Console. However, you can focus the following elements using the same key combinations:</p>
 <ul>
-<li>Open next tab</li>
-<li>Open previous tab</li>
+<li>1 - Source Editor</li>
+<li>2 - Console</li>
+<li>3 - Help</li>
+<li>4 - History</li>
+<li>5 - Files</li>
+<li>6 - Plots</li>
+<li>7 - Packages</li>
+<li>8 - Environment</li>
+<li>9 - Viewer</li>
 </ul>
+<p>The team in RStudio have also thought on case you want to move between tabs without taking your hands out of the keyboard. You can open tabs that are next to the one you are currently working by typing:</p>
+<table class="table">
+<caption><strong>Open previous/next tab</strong></caption>
+<colgroup>
+<col style="width: 52%">
+<col style="width: 47%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Windows <img src="figs/windows.png" class="img-fluid" style="width:5.0%"></th>
+<th style="text-align: center;">Mac <img src="figs/apple.png" class="img-fluid" style="width:6.5%"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Ctrl+Alt+Left/Right</td>
+<td style="text-align: center;">Cmd+Option+Left/Right</td>
+</tr>
+</tbody>
+</table>
+<p>In case you have many tabs open, the previous shortcut may not be practical. If you know the name of the tab you want to access, you can open it directly by typing the following:</p>
+<table class="table">
+<caption><strong>Switch to tab</strong></caption>
+<colgroup>
+<col style="width: 52%">
+<col style="width: 47%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Windows <img src="figs/windows.png" class="img-fluid" style="width:5.0%"></th>
+<th style="text-align: center;">Mac <img src="figs/apple.png" class="img-fluid" style="width:6.5%"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Ctrl+Shift+.</td>
+<td style="text-align: center;">Cmd+Shift+.</td>
+</tr>
+</tbody>
+</table>
+<p>This last shortcut shows a list of all the tabs that are currently open. You can look for a specific tab by writing its name and then you can access it by pressing <code>enter</code>.</p>
 </section>
 <section id="find-files-and-functions" class="level1">
-<h1>2. Find files and functions</h1>
+<h1>4. Find files and functions</h1>
 <hr>
-<ul>
-<li>Go to file/function</li>
-<li>Find/Replace text (in active tab)</li>
-<li>Find in files</li>
-</ul>
+<p>The following shortcuts serve you to look for specific words in the scripts and files that you are currently developing. This same set of tools will also let you replace all the text that matches your search.</p>
+<p>Let’s start with <strong>Find/Replace text</strong></p>
+<table class="table">
+<caption><strong>Find/Replace text</strong> (in active tab)</caption>
+<colgroup>
+<col style="width: 52%">
+<col style="width: 47%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Windows <img src="figs/windows.png" class="img-fluid" style="width:5.0%"></th>
+<th style="text-align: center;">Mac <img src="figs/apple.png" class="img-fluid" style="width:6.5%"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Ctrl+F</td>
+<td style="text-align: center;">Cmd+F</td>
+</tr>
+</tbody>
+</table>
+<p>This will appear a find/replace utility that will be very useful. You can highlight one by one all the texts that match your search or you can select all of them at once. It also lets you replace all the matches with another text. When you select multiple lines of code, by default, the search and replace utility will only look into the selected code. You can modify the behavior of this utility by activating/deactivating the options that are shown.</p>
+<p>The <strong>Go to file/function</strong> shortcut will show let you either access the files where you have defined specific functions or open files that are present in your current working directory. To do this, you will have to type the name or the function or file that you want to check and then press <code>enter</code>.</p>
+<table class="table">
+<caption><strong>Go to file/function</strong></caption>
+<colgroup>
+<col style="width: 52%">
+<col style="width: 47%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Windows <img src="figs/windows.png" class="img-fluid" style="width:5.0%"></th>
+<th style="text-align: center;">Mac <img src="figs/apple.png" class="img-fluid" style="width:6.5%"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Ctrl+.</td>
+<td style="text-align: center;">Cmd+.</td>
+</tr>
+</tbody>
+</table>
+<p>If you don’t remember where you left a specific file, but you do remember parts of it, <strong>Find in files</strong> is an utility that will be of great help. It lets you find any text that matches your search in <em>all the files that are under your working directory</em>. It will list you all the matches by the files where they are located. Just as <strong>Find/replace text</strong> this utility also lets you replace all the matches with specified text.</p>
+<table class="table">
+<caption><strong>Find in files</strong></caption>
+<colgroup>
+<col style="width: 52%">
+<col style="width: 47%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Windows <img src="figs/windows.png" class="img-fluid" style="width:5.0%"></th>
+<th style="text-align: center;">Mac <img src="figs/apple.png" class="img-fluid" style="width:6.5%"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Ctrl+Shift+F</td>
+<td style="text-align: center;">Cmd+Shift+F</td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="autocompletion" class="level1">
-<h1>4. Autocompletion</h1>
+<h1>5. Autocompletion</h1>
 <hr>
 <!-- Tab to open and complete -->
 <!-- Esc to close -->
@@ -398,20 +520,16 @@ Warning
 </ul>
 </section>
 <section id="running-code" class="level1">
-<h1>5. Running code</h1>
-<table class="table">
-<colgroup>
-<col style="width: 100%">
-</colgroup>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">- Run current line - Run current line (Witout moving the cursor) - Run the script from the <em>B</em>eginning to the current line and - Run the script from the current line to the <em>E</em>nd</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"># 6. Snippets</td>
-</tr>
-</tbody>
-</table>
+<h1>6. Running code</h1>
+<ul>
+<li>Run current line</li>
+<li>Run current line (Witout moving the cursor)</li>
+<li>Run the script from the <em>B</em>eginning to the current line and</li>
+<li>Run the script from the current line to the <em>E</em>nd |</li>
+</ul>
+</section>
+<section id="snippets" class="level1">
+<h1>7. Snippets</h1>
 <ul>
 <li>Create your own snippets!</li>
 </ul>
@@ -419,6 +537,19 @@ Warning
 <section id="conclusion" class="level1">
 <h1>Conclusion</h1>
 <hr>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Talk about the github repo!</p>
+</div>
+</div>
 </section>
 <section id="references" class="level1">
 <h1>References</h1>

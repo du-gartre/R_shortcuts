@@ -37,7 +37,7 @@ Besides, I will show the shortcut as it should be typed for both, windows and ma
 In case you need to check the full list of shortcuts, in the upper right corner of the help screen you will find a link called **See All Shortcuts** which will take you to a page containing all the RStudio shortcuts for specified for Mac, Windows and Linux.
 
 ::: callout-important
-Talk about the github repo!
+Talk about the github repo! Additional to this
 
 CTRL = ⌘ Command Alt = ⌥ Option
 :::
@@ -70,29 +70,29 @@ While concatenating functions or operations, forget about writing the pipe by ha
 
 : **Insert pipe operator`%>%` or `|>`**
 
-::: {.callout-note title="Defining the default pipe in global options" collapse="\"true"}
-The pipe that is going to be inserted is the one preset in `Global Options`.
+::: {.callout-note title="Defining the default pipe in global options" collapse="true"}
+The pipe that is going to be inserted is the one defined in `Global Options`.
 
-You can preset the type of pipe you want to insert while using the previous shortcut by accessing `Global Options/Code/Editing` and ticking if you would like to use the native pipe operator.
+You can preset the type of pipe you want to insert by accessing `Global Options/Code/Editing` and defining which pipe you would like to use.
 
-![Defining the default pipe in RStudio](figs/pipe.png)
+![Defining the default pipe in RStudio](figs/pipe.png){width="60%"}
 :::
 
 | Windows ![](figs/windows.png){width="5%"} | Mac ![](figs/apple.png){width="6.5%"} |
 |:------------------------------------:|:--------------------------------:|
-|                 Alt+Cmd+I                 |             Option+Cmd+I              |
+|                Alt+Ctrl+I                 |             Option+Cmd+I              |
 
 : **Insert code chunk (for Quarto and RMarkdown)**
 
 | Windows ![](figs/windows.png){width="5%"} | Mac ![](figs/apple.png){width="6.5%"} |
 |:------------------------------------:|:--------------------------------:|
-|                Cmd+Shift+C                |              Cmd+Shift+C              |
+|               Ctrl+Shift+C                |              Cmd+Shift+C              |
 
 : **Comment/uncomment current line selection**
 
 | Windows ![](figs/windows.png){width="5%"} | Mac ![](figs/apple.png){width="6.5%"} |
 |:------------------------------------:|:--------------------------------:|
-|                Cmd+Shift+R                |              Cmd+Shift+R              |
+|               Ctrl+Shift+R                |              Cmd+Shift+R              |
 
 : **Insert section break** (ideal for code outlines)
 
@@ -104,13 +104,21 @@ The section breaks have the same structure as the Quarto and RMarkdown headers.
 -   `###` stands for 3rd level headers, and so on.
 :::
 
+| Windows ![](figs/windows.png){width="5%"} | Mac ![](figs/apple.png){width="6.5%"} |
+|:------------------------------------:|:--------------------------------:|
+|                  Ctrl+I                   |                 Cmd+I                 |
+
+: **Reindent selection**
+
 ::: callout-warning
 -   Reindent selection
 :::
 
-# 2. Focus on panes
+# 2. Move between panes and tabs
 
 ------------------------------------------------------------------------
+
+In case that you want to move your cursor without taking your hands out of the keyboard, you can use the following shortcuts:
 
 | Windows ![](figs/windows.png){width="5%"} | Mac ![](figs/apple.png){width="6.5%"} |
 |:------------------------------------:|:--------------------------------:|
@@ -124,22 +132,75 @@ The section breaks have the same structure as the Quarto and RMarkdown headers.
 
 : **Move cursor to Console**
 
-# 2. Moving between tabs
+In my case I mainly use the shortcuts to change the cursor between the Source Editor and the Console. However, you can focus the following elements using the same key combinations:
+
+-   1 - Source Editor
+-   2 - Console
+-   3 - Help
+-   4 - History
+-   5 - Files
+-   6 - Plots
+-   7 - Packages
+-   8 - Environment
+-   9 - Viewer
+
+The team in RStudio have also thought on case you want to move between tabs without taking your hands out of the keyboard. You can open tabs that are next to the one you are currently working by typing:
+
+| Windows ![](figs/windows.png){width="5%"} | Mac ![](figs/apple.png){width="6.5%"} |
+|:------------------------------------:|:--------------------------------:|
+|            Ctrl+Alt+Left/Right            |         Cmd+Option+Left/Right         |
+
+: **Open previous/next tab**
+
+In case you have many tabs open, the previous shortcut may not be practical. If you know the name of the tab you want to access, you can open it directly by typing the following:
+
+| Windows ![](figs/windows.png){width="5%"} | Mac ![](figs/apple.png){width="6.5%"} |
+|:------------------------------------:|:--------------------------------:|
+|               Ctrl+Shift+.                |              Cmd+Shift+.              |
+
+: **Switch to tab**
+
+This last shortcut shows a list of all the tabs that are currently open. You can look for a specific tab by writing its name and then you can access it by pressing `enter`.
+
+# 4. Find files and functions
 
 ------------------------------------------------------------------------
 
--   Open next tab
--   Open previous tab
+The following shortcuts serve you to look for specific words in the scripts and files that you are currently developing. This same set of tools will also let you replace all the text that matches your search.
 
-# 2. Find files and functions
+Let's start with **Find/Replace text**
 
-------------------------------------------------------------------------
+| Windows ![](figs/windows.png){width="5%"} | Mac ![](figs/apple.png){width="6.5%"} |
+|:------------------------------------:|:--------------------------------:|
+|               Ctrl+F                |              Cmd+F              |
 
--   Go to file/function
--   Find/Replace text (in active tab)
--   Find in files
+: **Find/Replace text** (in active tab)
 
-# 4. Autocompletion
+This will appear a find/replace utility that will be very useful. You can highlight one by one all the texts that match your search or you can select all of them at once. It also lets you replace all the matches with another text. When you select multiple lines of code, by default, the search and replace utility will only look into the selected code. You can modify the behavior of this utility by activating/deactivating the options that are shown.
+
+The **Go to file/function** shortcut will show let you either access the files where you have defined specific functions or open files that are present in your current working directory. To do this, you will have to type the name or the function or file that you want to check and then press `enter`.
+
+| Windows ![](figs/windows.png){width="5%"} | Mac ![](figs/apple.png){width="6.5%"} |
+|:------------------------------------:|:--------------------------------:|
+|               Ctrl+.                |              Cmd+.              |
+
+: **Go to file/function**
+
+If you don't remember where you left a specific file, but you do remember parts 
+of it, **Find in files** is an utility that will be of great help. 
+It lets you find any text that matches your search in *all the files that are under your working directory*.
+It will list you all the matches by the files where they are located. Just as
+**Find/replace text** this utility also lets you replace all the matches with 
+specified text.
+
+
+| Windows ![](figs/windows.png){width="5%"} | Mac ![](figs/apple.png){width="6.5%"} |
+|:------------------------------------:|:--------------------------------:|
+|               Ctrl+Shift+F                |              Cmd+Shift+F              |
+
+: **Find in files**
+
+# 5. Autocompletion
 
 ------------------------------------------------------------------------
 
@@ -155,18 +216,24 @@ The section breaks have the same structure as the Quarto and RMarkdown headers.
     -   "/" Root directory
     -   "../" Move one level up
 
-# 5. Running code
+# 6. Running code
 
-|                                                                                                                                                                                     |
-|:-----------------------------------------------------------------------|
-| \- Run current line - Run current line (Witout moving the cursor) - Run the script from the *B*eginning to the current line and - Run the script from the current line to the *E*nd |
-| \# 6. Snippets                                                                                                                                                                      |
+-   Run current line
+-   Run current line (Witout moving the cursor)
+-   Run the script from the *B*eginning to the current line and
+-   Run the script from the current line to the *E*nd \|
+
+# 7. Snippets
 
 -   Create your own snippets!
 
 # Conclusion
 
 ------------------------------------------------------------------------
+
+::: callout-important
+Talk about the github repo!
+:::
 
 # References
 
