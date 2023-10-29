@@ -44,17 +44,17 @@ library(shiny)
 # 
 # Let's create a function that will multiply by two any number you input using
 # a snipet
-times_2 <- function(number) {
+times_two <- function(number) {
   output <- number*2
   
   return(output)
 }
 
-times_2(5)
+times_two(5)
 
 #* Now let's make a for loop using snippets
 for (i in 1:10) {
-  print(times_2(i))
+  print(times_two(i))
 }
 
 #* Snippets also can give you the structure of a Shiny App!
