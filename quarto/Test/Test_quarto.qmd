@@ -42,7 +42,7 @@ Talk about the github repo! Additional to this
 CTRL = ⌘ Command Alt = ⌥ Option
 :::
 
-# 1. Insert
+# 1. Insert Code
 
 ------------------------------------------------------------------------
 
@@ -118,6 +118,11 @@ The section breaks have the same structure as the Quarto and RMarkdown headers.
 
 ------------------------------------------------------------------------
 
+
+::: callout-warning
+-   Close tabs 
+:::
+
 In case that you want to move your cursor without taking your hands out of the keyboard, you can use the following shortcuts:
 
 | Windows ![](figs/windows.png){width="5%"} | Mac ![](figs/apple.png){width="6.5%"} |
@@ -188,8 +193,8 @@ The **Go to file/function** shortcut will show let you either access the files w
 
 If you don't remember where you left a specific file, but you do remember parts 
 of it, **Find in files** is an utility that will be of great help. 
-It lets you find any text that matches your search in *all the files that are under your working directory*.
-It will list you all the matches by the files where they are located. Just as
+It lets you find any text that matches your search in *all the files that are under your working directory* or
+in an specified directory. It will list you all the matches by the files where they are located. Just as
 **Find/replace text** this utility also lets you replace all the matches with 
 specified text.
 
