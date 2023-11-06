@@ -1,0 +1,6 @@
+- source: Test_quarto.qmd
+  quarto-pub:
+    - id: 4e66ee07-d6a9-47c5-8071-38a4bcbfcf1e
+      url: 'https://dgaribay.quarto.pub/rstudio-shortcuts-that-will-save-your-life'
+    - id: aee52ee0-72a7-4bd8-b1e5-b8908f9c3481
+      url: 'https://dgaribay.quarto.pub/r_studio_shortcuts'

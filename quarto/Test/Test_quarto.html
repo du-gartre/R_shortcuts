@@ -2,14 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.433">
+<meta name="generator" content="quarto-1.3.353">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="David U. Garibay-Treviño, M.Sc.">
+<meta name="author" content="David U. Garibay-Treviño, MPP.">
 <meta name="dcterms.date" content="2023-10-16">
 
-<title>RStudio shourtcuts that will save your life</title>
+<title>RStudio shortcuts that will save your life</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -44,7 +44,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">RStudio shourtcuts that will save your life</h1>
+      <h1 class="title">RStudio shortcuts that will save your life</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">RStudio</div>
                 <div class="quarto-category">Shortcuts</div>
@@ -59,7 +59,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Author</div>
       <div class="quarto-title-meta-contents">
-               <p>David U. Garibay-Treviño, M.Sc. </p>
+               <p>David U. Garibay-Treviño, MPP. </p>
             </div>
     </div>
       
@@ -77,18 +77,19 @@ ul.task-list li input[type="checkbox"] {
   </header><div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
 <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
   <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
+    <h2 id="toc-title">Contents</h2>
    
   <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
-  <li><a href="#insert" id="toc-insert" class="nav-link" data-scroll-target="#insert">1. Insert</a></li>
-  <li><a href="#move-between-panes-and-tabs" id="toc-move-between-panes-and-tabs" class="nav-link" data-scroll-target="#move-between-panes-and-tabs">2. Move between panes and tabs</a></li>
-  <li><a href="#find-files-and-functions" id="toc-find-files-and-functions" class="nav-link" data-scroll-target="#find-files-and-functions">4. Find files and functions</a></li>
-  <li><a href="#autocompletion" id="toc-autocompletion" class="nav-link" data-scroll-target="#autocompletion">5. Autocompletion</a></li>
-  <li><a href="#running-code" id="toc-running-code" class="nav-link" data-scroll-target="#running-code">6. Running code</a></li>
-  <li><a href="#snippets" id="toc-snippets" class="nav-link" data-scroll-target="#snippets">7. Snippets</a></li>
-  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  <li><a href="#sec-intro" id="toc-sec-intro" class="nav-link active" data-scroll-target="#sec-intro"><span class="header-section-number">1</span> Introduction</a></li>
+  <li><a href="#sec-insert" id="toc-sec-insert" class="nav-link" data-scroll-target="#sec-insert"><span class="header-section-number">2</span> Insert code</a></li>
+  <li><a href="#edit_code" id="toc-edit_code" class="nav-link" data-scroll-target="#edit_code"><span class="header-section-number">3</span> Edit code</a></li>
+  <li><a href="#sec-panes_tabs" id="toc-sec-panes_tabs" class="nav-link" data-scroll-target="#sec-panes_tabs"><span class="header-section-number">4</span> Move between panes and tabs</a></li>
+  <li><a href="#sec-find" id="toc-sec-find" class="nav-link" data-scroll-target="#sec-find"><span class="header-section-number">5</span> Find files and functions</a></li>
+  <li><a href="#sec-run_code" id="toc-sec-run_code" class="nav-link" data-scroll-target="#sec-run_code"><span class="header-section-number">6</span> Run code</a></li>
+  <li><a href="#sec-auto" id="toc-sec-auto" class="nav-link" data-scroll-target="#sec-auto"><span class="header-section-number">7</span> Code completion</a></li>
+  <li><a href="#sec-snippets" id="toc-sec-snippets" class="nav-link" data-scroll-target="#sec-snippets"><span class="header-section-number">8</span> Snippets</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">9</span> Conclusion</a></li>
+  <li><a href="#sec-ref" id="toc-sec-ref" class="nav-link" data-scroll-target="#sec-ref"><span class="header-section-number">10</span> References</a></li>
   </ul>
 </nav>
 </div>
@@ -97,13 +98,25 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="introduction" class="level1">
-<h1>Introduction</h1>
+<section id="sec-intro" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Introduction</h1>
 <hr>
-<p>Once you have started your journey as an R code developer, and you have had some experience writting scripts and code in general, then you may have thought “can this code be written faster?” either for simple or for large scale projects.</p>
-<p>If you have kept thinking on how to speed up your code writting process or even if you only want to be more comfortable writing code, then you have arrived to the right place!</p>
-<p>In this brief tutorial I will try my best to share some of the most used shortcuts in R + RStudio, according to my experience and to that of other users that have also talked on the subject (check references). To make this tutorial a little bit more intuitive, I will break the shortcuts in the next categories: a. b. c.</p>
-<p>Besides, I will show the shortcut as it should be typed for both, windows and mac in the following format:</p>
+<p>I remember my first days writing code in R. At the beginning I typed every part of the assignment operator (<code>&lt;</code> and then <code>-</code>), I typed every <code>#</code> at the start of all the lines I wanted to comment, I typed every part of a code chunk while writing notebooks in <strong>R Markdown</strong> (which nowadays has evolved to <strong>Quarto</strong>). The mouse was my main tool to open new scripts, change tabs, and close tabs. When I had to read or write any file I had to double check how it was written and where it was located. And when an important script was lost, I did not have any alternative other than to check every one of the folders where I thought it could be placed.</p>
+<p>At first I did not imagine that a lot of people have suffered the same as I, but already had thought about smart ways to tackle these difficulties.</p>
+<p>I remember that everything started to change when I saw a colleague commenting multiple lines of code simultaneously by first selecting them and then pressing <code>Ctrl+C</code> (<code>Cmd+C</code> for Mac). From that point I started to learn and use new shortcuts and commands to improve the quality of my scripts as well as to reduce the time I spent developing them.</p>
+<p>If you have kept thinking on how to speed up your code writing process or even if you only want to be more comfortable developing code, then you have arrived to the right place!</p>
+<p>In this brief tutorial I will try my best to share some of the most used shortcuts in RStudio, according to my experience and to that of other users that have also talked on the subject (check <a href="#sec-ref">Section&nbsp;10</a>). To make this tutorial a little bit more intuitive. I will break the shortcuts in the next categories:</p>
+<ul>
+<li>Insert code</li>
+<li>Edit code</li>
+<li>Move between panes and tabs</li>
+<li>Find files and functions</li>
+<li>Running code</li>
+<li>Code completion</li>
+<li>Snippets</li>
+</ul>
+<p>Let’s start with <strong>Show keyboard shortcuts help</strong>!. This shortcut brings up a screen listing some of some of the most useful shortcuts. To exit this screen you just have to press <code>Esc</code>.</p>
+<p>In case you want to check the full list of shortcuts, in the upper right corner of the help screen you will find a link called <em>See All Shortcuts</em>. It will take you to a page containing all the shortcuts divided by OS.</p>
 <table class="table">
 <caption><strong>Show keyboard shortcuts help</strong></caption>
 <colgroup>
@@ -123,32 +136,18 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table>
-<p><strong>Show keyboard shortcuts help</strong> is the first shortcut we will see. What it does is showing us a list of some of the most useful shortcuts in the screen. To exit this screen you just have to press <code>Escape</code>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="figs/help.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption class="figure-caption">How to check for the full list of shortcuts</figcaption>
 </figure>
 </div>
-<p>In case you need to check the full list of shortcuts, in the upper right corner of the help screen you will find a link called <strong>See All Shortcuts</strong> which will take you to a page containing all the RStudio shortcuts for specified for Mac, Windows and Linux.</p>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Important
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Talk about the github repo! Additional to this</p>
-<p>CTRL = ⌘ Command Alt = ⌥ Option</p>
-</div>
-</div>
+<p>All the shortcuts in this tutorial will have the same format as in the previous example. They will be inside of a table, where the title is the name of the shortcut and it will show the shortcut as it should be typed for both, Windows and Mac OS.</p>
 </section>
-<section id="insert" class="level1">
-<h1>1. Insert</h1>
+<section id="sec-insert" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Insert code</h1>
 <hr>
-<p>Want a new R Script? easy-peasy!</p>
+<p>Want to create a new R Script? easy-peasy!</p>
 <table class="table">
 <caption><strong>Create a new R Script</strong></caption>
 <colgroup>
@@ -168,7 +167,7 @@ Important
 </tr>
 </tbody>
 </table>
-<p>You want to assign an object? Instead of pressing <code>&lt;</code> and then <code>-</code>, you can do it directly by pressing:</p>
+<p>You want to assign an object? Instead of writting <code>&lt;-</code> key by key, you can do it directly by pressing:</p>
 <table class="table">
 <caption><strong>Insert assignment operator <code>&lt;-</code></strong></caption>
 <colgroup>
@@ -188,7 +187,7 @@ Important
 </tr>
 </tbody>
 </table>
-<p>While concatenating functions or operations, forget about writing the pipe by hand. You can insert it directly using this shortcut.</p>
+<p>While concatenating functions or operations, forget about writing the pipe opearator by hand. You can insert it directly by pressing:</p>
 <table class="table">
 <caption><strong>Insert pipe operator<code>%&gt;%</code> or <code>|&gt;</code></strong></caption>
 <colgroup>
@@ -208,29 +207,32 @@ Important
 </tr>
 </tbody>
 </table>
-<div class="callout callout-style-default callout-note callout-titled" title="Defining the default pipe in global options">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout callout-style-default callout-tip callout-titled" title="Defining the default pipe">
+<div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Defining the default pipe in global options
+Defining the default pipe
 </div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-2" class="callout-2-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>The pipe that is going to be inserted is the one defined in <code>Global Options</code>.</p>
-<p>You can preset the type of pipe you want to insert by accessing <code>Global Options/Code/Editing</code> and defining which pipe you would like to use.</p>
+<p>The type of pipe that is going to be inserted is defined in <code>Global Options</code>.</p>
+<p>Currently there are two pipes that are commonly used:</p>
+<ul>
+<li>the magrittr pipe <code>%&gt;%</code>, and</li>
+<li>the native pipe <code>|&gt;</code>.</li>
+</ul>
+<p>You can preset the pipe you want to insert by accessing <code>Global Options/Code/Editing</code> and defining if you want to use the native pipe (in case you don’t, the magrittr pipe will be automatically used).</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="figs/pipe.png" class="img-fluid figure-img" style="width:60.0%"></p>
-<figcaption class="figure-caption">Defining the default pipe in RStudio</figcaption>
 </figure>
 </div>
 </div>
 </div>
-</div>
+<p>If you are working on a <code>Quarto</code> or an <code>R Markdown</code> file, you can forget of writing every component of the code chunks by hand by using the <strong>insert code chunk</strong> shortcut.</p>
+<p>It certainly will save you a good amount of time. Besides, it will help you to keep focused in the main things while creating a Notebook: developing your code and your writing.</p>
 <table class="table">
 <caption><strong>Insert code chunk (for Quarto and RMarkdown)</strong></caption>
 <colgroup>
@@ -245,11 +247,12 @@ Defining the default pipe in global options
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: center;">Alt+Ctrl+I</td>
-<td style="text-align: center;">Option+Cmd+I</td>
+<td style="text-align: center;">Ctrl+Alt+I</td>
+<td style="text-align: center;">Cmd+Option+I</td>
 </tr>
 </tbody>
 </table>
+<p><strong>Comment/uncomment current line selection</strong> is one of the first shortcuts that I learned, and currently it is still among the ones I use the most. Instead of manually adding <code>#</code> at the start of each line you want to comment, you can select whole sections of code and comment them. Since commenting code is very common, this shortcut will save you an enormous amount of time.</p>
 <table class="table">
 <caption><strong>Comment/uncomment current line selection</strong></caption>
 <colgroup>
@@ -269,8 +272,10 @@ Defining the default pipe in global options
 </tr>
 </tbody>
 </table>
+<p>In case you are looking to organize your code scripts sections, subsections and other sorting levels, you will be happy to find about how to <strong>insert a new code section</strong>.</p>
+<p>This is ideal to have a good structure of your code, and the best part is that all the sections and subsections that you create will be visible in the code outline that is next to the <code>Source</code> button in Rstudio.</p>
 <table class="table">
-<caption><strong>Insert section break</strong> (ideal for code outlines)</caption>
+<caption><strong>Insert a new code section</strong></caption>
 <colgroup>
 <col style="width: 52%">
 <col style="width: 47%">
@@ -288,24 +293,31 @@ Defining the default pipe in global options
 </tr>
 </tbody>
 </table>
-<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout callout-style-default callout-tip callout-titled" title="Defining the level of the headers">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Tip
+Defining the level of the headers
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>The section breaks have the same structure as the Quarto and RMarkdown headers.</p>
+<p>The section breaks have a similar structure as the Quarto and RMarkdown headers. The number of <code>#</code> at the beginning of each line defines the level of the headers:</p>
 <ul>
 <li><code>#</code> stands for 1st level header,</li>
 <li><code>##</code> stands for 2nd level headers,</li>
 <li><code>###</code> stands for 3rd level headers, and so on.</li>
 </ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figs/outline.png" class="img-fluid figure-img" style="width:100.0%"></p>
+</figure>
 </div>
 </div>
+</div>
+<p>While writing a script, it may be the case that you lost the indentation level at what you should be working in specific sections of the code. Instead of manually defining the code indentation you can make a selection of the code and directly indent it. This is a great aid to visually structure your code.</p>
+<p>In case you want to reindent all the content in a script, first select all (Ctrl + A for Windows, and Cmd + A for Mac) and then reindent. This will save you a lot of time and headaches figuring out how the code should be indented.</p>
 <table class="table">
 <caption><strong>Reindent selection</strong></caption>
 <colgroup>
@@ -325,28 +337,154 @@ Tip
 </tr>
 </tbody>
 </table>
-<div class="callout callout-style-default callout-warning callout-titled">
+</section>
+<section id="edit_code" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Edit code</h1>
+<hr>
+<p>You can move lines of code up or down without having to copy them.</p>
+<table class="table">
+<caption><strong>Move lines up/down</strong></caption>
+<colgroup>
+<col style="width: 52%">
+<col style="width: 47%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Windows <img src="figs/windows.png" class="img-fluid" style="width:5.0%"></th>
+<th style="text-align: center;">Mac <img src="figs/apple.png" class="img-fluid" style="width:6.5%"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Alt+Up/Down</td>
+<td style="text-align: center;">Option+Up/Down</td>
+</tr>
+</tbody>
+</table>
+<p>You can also copy lines of code up or down without having to copy and paste them.</p>
+<table class="table">
+<caption><strong>Copy lines up/down</strong></caption>
+<colgroup>
+<col style="width: 52%">
+<col style="width: 47%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Windows <img src="figs/windows.png" class="img-fluid" style="width:5.0%"></th>
+<th style="text-align: center;">Mac <img src="figs/apple.png" class="img-fluid" style="width:6.5%"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Shift+Alt+Up/Down</td>
+<td style="text-align: center;">Option+Cmd+Up/Down</td>
+</tr>
+</tbody>
+</table>
+<p>You can select code without using the mouse. To create or modify a selection using the keyboard, you have to maintain <code>Shift</code> pressed while moving your cursor. You will select anything that have been passed down by your cursor. Once you stop pressing <code>Shift</code> you will stop modifying your selection.</p>
+<table class="table">
+<caption><strong>Select</strong></caption>
+<colgroup>
+<col style="width: 52%">
+<col style="width: 47%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Windows <img src="figs/windows.png" class="img-fluid" style="width:5.0%"></th>
+<th style="text-align: center;">Mac <img src="figs/apple.png" class="img-fluid" style="width:6.5%"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Shift+[Arrow]</td>
+<td style="text-align: center;">Shift+[Arrow]</td>
+</tr>
+</tbody>
+</table>
+<p>You can move your cursor directly to the start or the end of a line only with your keyboard following the next key combination:</p>
+<table class="table">
+<caption><strong>Move cursor to start/end of line</strong></caption>
+<colgroup>
+<col style="width: 52%">
+<col style="width: 47%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Windows <img src="figs/windows.png" class="img-fluid" style="width:5.0%"></th>
+<th style="text-align: center;">Mac <img src="figs/apple.png" class="img-fluid" style="width:6.5%"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Alt+Left/Right</td>
+<td style="text-align: center;">Cmd+Left/Right</td>
+</tr>
+</tbody>
+</table>
+<p>You can also move your cursor to the start or the end of a word with the following shortcut:</p>
+<table class="table">
+<caption><strong>Jump to word</strong> (move cursor to start/end of word)</caption>
+<colgroup>
+<col style="width: 52%">
+<col style="width: 47%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Windows <img src="figs/windows.png" class="img-fluid" style="width:5.0%"></th>
+<th style="text-align: center;">Mac <img src="figs/apple.png" class="img-fluid" style="width:6.5%"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Ctrl+Left/Right</td>
+<td style="text-align: center;">Alt+Left/Right</td>
+</tr>
+</tbody>
+</table>
+<p>You can add multiple cursors to edit multiple lines of code simultaneously. For that you need to press the next combination of keys.</p>
+<table class="table">
+<caption><strong>Add cursor Above/Below current cursor</strong></caption>
+<colgroup>
+<col style="width: 52%">
+<col style="width: 47%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Windows <img src="figs/windows.png" class="img-fluid" style="width:5.0%"></th>
+<th style="text-align: center;">Mac <img src="figs/apple.png" class="img-fluid" style="width:6.5%"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Ctrl+Alt+Up/Down</td>
+<td style="text-align: center;">Ctrl+Option+Up/Down</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-tip callout-titled" title="Advanced selection">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Warning
+Advanced selection
 </div>
 </div>
 <div class="callout-body-container callout-body">
+<p>Once you know how to select, move the cursor to the start/end of a line, move the cursor to the start/end of a word, and add multiple cursors, you have all the ingredients to make more complex selections. You can combine <code>select</code> with any of these shortcuts to get different types of selections.</p>
+<p>Here is an examples (in Mac format):</p>
 <ul>
-<li>Reindent selection</li>
+<li>You can make a selection from your cursor position to the end of a line by pressing <code>Shift+Alt+Left</code> in Windows (or <code>Shift+Cmd+Left</code> in Mac).</li>
 </ul>
 </div>
 </div>
 </section>
-<section id="move-between-panes-and-tabs" class="level1">
-<h1>2. Move between panes and tabs</h1>
+<section id="sec-panes_tabs" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Move between panes and tabs</h1>
 <hr>
-<p>In case that you want to move your cursor without taking your hands out of the keyboard, you can use the following shortcuts:</p>
+<p>You can <strong>move focus to Source Editor</strong>, i.e., place the cursor in the active script, without taking your hands out of the keyboard with the following shortcut.</p>
 <table class="table">
-<caption><strong>Move cursor to Source Editor</strong></caption>
+<caption><strong>Move focus to Source Editor</strong></caption>
 <colgroup>
 <col style="width: 52%">
 <col style="width: 47%">
@@ -360,12 +498,13 @@ Warning
 <tbody>
 <tr class="odd">
 <td style="text-align: center;">Ctrl+1</td>
-<td style="text-align: center;">Ctrl+1</td>
+<td style="text-align: center;">Cmd+1</td>
 </tr>
 </tbody>
 </table>
+<p>The same idea goes for the console. You can place the cursor in the Console by using:</p>
 <table class="table">
-<caption><strong>Move cursor to Console</strong></caption>
+<caption><strong>Move focus to Console</strong></caption>
 <colgroup>
 <col style="width: 52%">
 <col style="width: 47%">
@@ -379,11 +518,11 @@ Warning
 <tbody>
 <tr class="odd">
 <td style="text-align: center;">Ctrl+2</td>
-<td style="text-align: center;">Ctrl+2</td>
+<td style="text-align: center;">Cmd+2</td>
 </tr>
 </tbody>
 </table>
-<p>In my case I mainly use the shortcuts to change the cursor between the Source Editor and the Console. However, you can focus the following elements using the same key combinations:</p>
+<p>I mainly use the shortcuts to move the cursor between the Source Editor (1) and the Console (2). In any case, you can focus the following elements inside RStudio just by changing the number of the key combination:</p>
 <ul>
 <li>1 - Source Editor</li>
 <li>2 - Console</li>
@@ -395,7 +534,7 @@ Warning
 <li>8 - Environment</li>
 <li>9 - Viewer</li>
 </ul>
-<p>The team in RStudio have also thought on case you want to move between tabs without taking your hands out of the keyboard. You can open tabs that are next to the one you are currently working by typing:</p>
+<p>To move between tabs without taking your hands out of the keyboard you have to type:</p>
 <table class="table">
 <caption><strong>Open previous/next tab</strong></caption>
 <colgroup>
@@ -415,7 +554,7 @@ Warning
 </tr>
 </tbody>
 </table>
-<p>In case you have many tabs open, the previous shortcut may not be practical. If you know the name of the tab you want to access, you can open it directly by typing the following:</p>
+<p>The previous shortcut may not be practical if you have opened many tabs. If you know the name of the tab you want to go, you can open it directly using <strong>Switch to tab</strong> which shows a list of all the tabs. You can look for a specific tab by writing its name and access it by pressing <code>enter</code>.</p>
 <table class="table">
 <caption><strong>Switch to tab</strong></caption>
 <colgroup>
@@ -435,13 +574,38 @@ Warning
 </tr>
 </tbody>
 </table>
-<p>This last shortcut shows a list of all the tabs that are currently open. You can look for a specific tab by writing its name and then you can access it by pressing <code>enter</code>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figs/switch_tab.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption class="figure-caption">Switch to tab…</figcaption>
+</figure>
+</div>
+<p>You can <strong>close current document</strong> once you have finished working on it. This is very usefull to close multiple tabs without using the mouse.</p>
+<table class="table">
+<caption><strong>Close current document</strong></caption>
+<colgroup>
+<col style="width: 52%">
+<col style="width: 47%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Windows <img src="figs/windows.png" class="img-fluid" style="width:5.0%"></th>
+<th style="text-align: center;">Mac <img src="figs/apple.png" class="img-fluid" style="width:6.5%"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Ctrl+W</td>
+<td style="text-align: center;">Cmd+W</td>
+</tr>
+</tbody>
+</table>
 </section>
-<section id="find-files-and-functions" class="level1">
-<h1>4. Find files and functions</h1>
+<section id="sec-find" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Find files and functions</h1>
 <hr>
 <p>The following shortcuts serve you to look for specific words in the scripts and files that you are currently developing. This same set of tools will also let you replace all the text that matches your search.</p>
-<p>Let’s start with <strong>Find/Replace text</strong></p>
+<p>Let’s start with <strong>Find/Replace text</strong>. It will show a find/replace utility. You can select all the texts that match your search one by one (with <code>Next</code> and <code>Prev</code>), or you can select all of them at once (with <code>All</code>). It also lets you replace all the matches with another text. When a part of the of code is previously selected, the search and replace utility will only look into the selected code by default. You can modify the behavior of this utility by ticking its different options.</p>
 <table class="table">
 <caption><strong>Find/Replace text</strong> (in active tab)</caption>
 <colgroup>
@@ -461,8 +625,18 @@ Warning
 </tr>
 </tbody>
 </table>
-<p>This will appear a find/replace utility that will be very useful. You can highlight one by one all the texts that match your search or you can select all of them at once. It also lets you replace all the matches with another text. When you select multiple lines of code, by default, the search and replace utility will only look into the selected code. You can modify the behavior of this utility by activating/deactivating the options that are shown.</p>
-<p>The <strong>Go to file/function</strong> shortcut will show let you either access the files where you have defined specific functions or open files that are present in your current working directory. To do this, you will have to type the name or the function or file that you want to check and then press <code>enter</code>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figs/find_replace.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption class="figure-caption">Selecting all the text that matches with the word <code>fear</code></figcaption>
+</figure>
+</div>
+<p>The <strong>Go to file/function</strong> shortcut brings up a search box that allows you to:</p>
+<ul>
+<li>access the files where you have defined specific functions, or</li>
+<li>open files that are present in your current working directory.</li>
+</ul>
+<p>To do this, you will have to type the name or the function or file that you want to check and then press <code>enter</code>.</p>
 <table class="table">
 <caption><strong>Go to file/function</strong></caption>
 <colgroup>
@@ -482,7 +656,13 @@ Warning
 </tr>
 </tbody>
 </table>
-<p>If you don’t remember where you left a specific file, but you do remember parts of it, <strong>Find in files</strong> is an utility that will be of great help. It lets you find any text that matches your search in <em>all the files that are under your working directory</em>. It will list you all the matches by the files where they are located. Just as <strong>Find/replace text</strong> this utility also lets you replace all the matches with specified text.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figs/basic_fun.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption class="figure-caption">Looking for the <code>basic_fun</code> function among the files of a working directory</figcaption>
+</figure>
+</div>
+<p>In my consideration the most powerful and usefull search tool in the RStudio IDE is <strong>Find in files</strong>. It is an utility that lets you find any text that matches your search among <em>all the files present under your working directory</em> or in any directory that you specify. It will list you all the findings disaggregating them by the files in where they are located. Just as <strong>Find/replace text</strong> this utility also lets you replace all the matches with specified text.</p>
 <table class="table">
 <caption><strong>Find in files</strong></caption>
 <colgroup>
@@ -502,71 +682,209 @@ Warning
 </tr>
 </tbody>
 </table>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figs/find_in_files.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption class="figure-caption">Looking for the word <code>and</code> among the RScripts of a given directory</figcaption>
+</figure>
+</div>
 </section>
-<section id="autocompletion" class="level1">
-<h1>5. Autocompletion</h1>
+<section id="sec-run_code" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> Run code</h1>
 <hr>
-<!-- Tab to open and complete -->
-<!-- Esc to close -->
-<!-- Ctrl/Cmd + Space to open -->
-<ul>
-<li>code autocompletion</li>
-<li>path autocompletion
-<ul>
-<li>“” Working directory</li>
-<li>“/” Root directory</li>
-<li>“../” Move one level up</li>
-</ul></li>
-</ul>
+<p>The most basic way to execute code in the Source Editor is to put the cursor in the line (or selection) of code you want to run and use this shortcut. This will execute the current line (or selection) and move your cursor to the next part of the code. It is very useful when you are running your Scritps step by step.</p>
+<table class="table">
+<caption><strong>Run current line or selection</strong></caption>
+<colgroup>
+<col style="width: 52%">
+<col style="width: 47%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Windows <img src="figs/windows.png" class="img-fluid" style="width:5.0%"></th>
+<th style="text-align: center;">Mac <img src="figs/apple.png" class="img-fluid" style="width:6.5%"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Ctrl+Enter</td>
+<td style="text-align: center;">Cmd+Enter</td>
+</tr>
+</tbody>
+</table>
+<p>This shortcut is similar to the previous one, except that the cursor will remain in its place after executing the code.</p>
+<p>It can be very useful, specially while making code tests or developing figures in <code>ggplot</code>, and you don’t want to move your cursor away every time the code is executed.</p>
+<table class="table">
+<caption><strong>Run current line or selection (without moving cursor)</strong></caption>
+<colgroup>
+<col style="width: 52%">
+<col style="width: 47%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Windows <img src="figs/windows.png" class="img-fluid" style="width:5.0%"></th>
+<th style="text-align: center;">Mac <img src="figs/apple.png" class="img-fluid" style="width:6.5%"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Alt+Enter</td>
+<td style="text-align: center;">Option+Enter</td>
+</tr>
+</tbody>
+</table>
+<p>The following shortcut is one of my personal favorites. Imagine that you have written a lot of lines in a script and you would like to run continue modifying it after restarting your computer You don’t have to run the code line by line until you arrive to a specific part of the code. With this shortcut you can place your cursor in a line and run everything before it.</p>
+<p>Please, give it a try. I have saved plenty of time since I have started using it, and I am sure that it can do the same for you.</p>
+<table class="table">
+<caption>Run from document <strong>B</strong>eginning to current line</caption>
+<colgroup>
+<col style="width: 52%">
+<col style="width: 47%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Windows <img src="figs/windows.png" class="img-fluid" style="width:5.0%"></th>
+<th style="text-align: center;">Mac <img src="figs/apple.png" class="img-fluid" style="width:6.5%"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Ctrl+Alt+B</td>
+<td style="text-align: center;">Option+Cmd+B</td>
+</tr>
+</tbody>
+</table>
+<p>This is the complement of the previous shorcut. After placing the cursor in a specific line, you can run the rest of the code by using:</p>
+<table class="table">
+<caption>Run from current line to document <strong>E</strong>nd</caption>
+<colgroup>
+<col style="width: 52%">
+<col style="width: 47%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Windows <img src="figs/windows.png" class="img-fluid" style="width:5.0%"></th>
+<th style="text-align: center;">Mac <img src="figs/apple.png" class="img-fluid" style="width:6.5%"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Ctrl+Alt+B</td>
+<td style="text-align: center;">Option+Cmd+B</td>
+</tr>
+</tbody>
+</table>
 </section>
-<section id="running-code" class="level1">
-<h1>6. Running code</h1>
-<ul>
-<li>Run current line</li>
-<li>Run current line (Witout moving the cursor)</li>
-<li>Run the script from the <em>B</em>eginning to the current line and</li>
-<li>Run the script from the current line to the <em>E</em>nd |</li>
-</ul>
-</section>
-<section id="snippets" class="level1">
-<h1>7. Snippets</h1>
-<ul>
-<li>Create your own snippets!</li>
-</ul>
-</section>
-<section id="conclusion" class="level1">
-<h1>Conclusion</h1>
+<section id="sec-auto" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> Code completion</h1>
 <hr>
-<div class="callout callout-style-default callout-important callout-titled">
+<p>RStudio has several completion functions that are very useful while writing code. After you start typing, a completion list will pop up showing the names of functions, objects and snippets that match your text. If the list is not shown, you can make it appear by pressing <code>Tab</code> while your cursor is at the end of what you have typed. Inside the list use the <code>Up</code>/<code>Down</code> arrows to move between the suggestions, and press <code>Enter</code> to select an option. You can press <code>Esc</code> to exit the completion list without making a selection.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figs/code_completion.png" class="img-fluid figure-img" style="width:85.0%"></p>
+<figcaption class="figure-caption">Code completion of <code>read</code></figcaption>
+</figure>
+</div>
+<p>While using functions, you can list their arguments of a function by pressing <code>Tab</code> or <code>Ctrl+Space</code> inside the function parentheses. As in the previous case, you have to use the <code>Up</code>/<code>Down</code> arrows to move between the options and press <code>Enter</code> once you have made your selection. This can be extremely useful if you want to be very specific using the arguments of a function, or if you want to know all its arguments.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figs/fun_completion.png" class="img-fluid figure-img" style="width:85.0%"></p>
+<figcaption class="figure-caption">Showing the arguments of the <code>read.csv</code> function</figcaption>
+</figure>
+</div>
+<p>If you are using paths to read or write files, RStudio also has a completion tool to speed things up. To enter the path completion list you have to write quotation marks <code>""</code> and press <code>Tab</code> while your cursor is inside. A list showing the folders and files of your current working directory will appear. You can navigate between the options using the <code>Up</code>/<code>Down</code> arrows or you can type the name of the file/folder you want to go. Press <code>Tab</code> or <code>Enter</code> to make your selection. If you have accessed a new folder the process will repeat until you selected a file.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figs/path_completion.png" class="img-fluid figure-img" style="width:85.0%"></p>
+<figcaption class="figure-caption">Path completion while reading csv files</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Tips for file navigation">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Important
+Tips for file navigation
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Talk about the github repo!</p>
+<p>While navigating locations to save or read files, it is important to consider the following:</p>
+<ul>
+<li><code>""</code> starts navigation at your <em>current working directory</em>,</li>
+<li><code>"/"</code> starts navigation at you <em>root</em> directory, and</li>
+<li><code>"../"</code> starts navigation one level above the working directory.</li>
+</ul>
 </div>
 </div>
 </section>
-<section id="references" class="level1">
-<h1>References</h1>
+<section id="sec-snippets" class="level1" data-number="8">
+<h1 data-number="8"><span class="header-section-number">8</span> Snippets</h1>
 <hr>
-<div class="callout callout-style-default callout-note callout-titled">
+<p>Snippets are pieces of re-usable boilerplate code. They are very useful to avoid the repetition of writing several lines of code since they are a way to automate the insertion of pre-made pieces of code.</p>
+<p>To insert a snippet you have to write it and then select it from a completion list. It will be inserted along with some text placeholders which you can fill in. To move to the next placeholder you have to press <code>Tab</code>.</p>
+<p>Let’s use the <code>fun</code> snippet, used to define new functions. First we have to write <code>fun</code> in an R script and select it from an autocompletion list. You will be able to recognize it because it has the <code>{snippet}</code> tag.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figs/snippet_1.png" class="img-fluid figure-img" style="width:85.0%"></p>
+</figure>
+</div>
+<p>Second, the <code>fun</code> snippet will be inserted along with three placeholders: one to define the function <strong>name</strong>, another to define the function <strong>variables</strong>, and the last one to define the <strong>body</strong> of the function.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figs/snippet_2.png" class="img-fluid figure-img" style="width:85.0%"></p>
+</figure>
+</div>
+<p>Here’s a list of some useful snippets:</p>
+<ul>
+<li><code>fun</code> to declare a new function,</li>
+<li><code>lib</code> to declare a new library to be imported,</li>
+<li><code>mat</code> to insert a new matrix,</li>
+<li><code>for</code> to insert a for loop,</li>
+<li><code>while</code> to insert a while loop,</li>
+<li><code>if</code> to insert an <em>if</em> conditional statement,</li>
+<li><code>el</code> to insert and <em>else</em> conditional statement,</li>
+<li><code>ei</code> to insert and <em>else if</em> conditional statement,</li>
+<li><code>apply</code> to insert an apply function, and</li>
+<li><code>shiny</code> to insert a shiny app template.</li>
+</ul>
+<p>Besides you can customize and create your own snippets by accessing <code>Global Options/Code/Editing</code> and clicking at <em>Edit Snippets</em>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figs/snippet_3.png" class="img-fluid figure-img" style="width:60.0%"></p>
+</figure>
+</div>
+<p>You can look for more details on how to create custom snippets at this <a href="https://appsilon.com/rstudio-shortcuts-and-tips/#:~:text=Reformat%20R%20scripts&amp;text=Ctrl%20%2B%20Shift%20%2B%20A%20%E2%80%93%20Does,selected%20part%20of%20a%20code">website</a>.</p>
+</section>
+<section id="conclusion" class="level1" data-number="9">
+<h1 data-number="9"><span class="header-section-number">9</span> Conclusion</h1>
+<hr>
+<p>As we have seen here, there is are several shortcuts and commands that are incorporated into the RStudio IDE. It will take you some time learning and getting used to them. You will practice some more than others, and that is normal, every developer has different tasks and priorities. Little by little you will notice how you are incorporating them in your usual workflow, and one day you will know more tips and tricks than the ones that I have listed.</p>
+<p>In the meanwhile, I hope this is useful for you (and perhaps for the future me) and wish you the best of lucks in your path developing R code!</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Custom keyboard shortcuts">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Note
+Custom keyboard shortcuts
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Cite this page: Lehmann, L. (2023, April 18). <em>Introduction to Social Media Scraping</em>. Hertie Coding Club. <a href="https://www.hertiecodingclub.com/learn/rstudio/social_media_scraping/">URL</a></p>
+<p>Just one last thing. RStudio allows you to create and customize keyboard shortcuts in <code>Tools/Modify keyboard shortcuts</code> you can more details about this in <a href="https://docs.posit.co/ide/user/ide/guide/productivity/custom-shortcuts.html#:~:text=Modify%20a%20command's%20shortcut%20by,based%20on%20the%20keys%20entered.">this website</a>.</p>
 </div>
 </div>
+</section>
+<section id="sec-ref" class="level1" data-number="10">
+<h1 data-number="10"><span class="header-section-number">10</span> References</h1>
+<hr>
+<ul>
+<li><a href="https://support.posit.co/hc/en-us/articles/200711853-Keyboard-Shortcuts-in-the-RStudio-IDE">Keyboard Shortcuts in the RStudio IDE</a></li>
+<li><a href="https://appsilon.com/rstudio-shortcuts-and-tips/#:~:text=Reformat%20R%20scripts&amp;text=Ctrl%20%2B%20Shift%20%2B%20A%20%E2%80%93%20Does,selected%20part%20of%20a%20code">RStudio Shortcuts and Tips (Updated 2022)</a></li>
+<li><a href="https://www.dataquest.io/blog/rstudio-tips-tricks-shortcuts/">23 RStudio Tips, Tricks, and Shortcuts</a></li>
+<li><a href="https://www.youtube.com/watch?v=U373PGg8Y_0&amp;ab_channel=BusinessScience">6 RStudio Keyboard Shortcuts (that will change your life)</a></li>
+<li><a href="https://docs.posit.co/ide/user/ide/guide/productivity/custom-shortcuts.html#:~:text=Modify%20a%20command's%20shortcut%20by,based%20on%20the%20keys%20entered.">Custom Shortcuts - RStudio User Guide</a></li>
+</ul>
 </section>
 
 </main>
