@@ -1,6 +1,6 @@
 ---
 title: "RStudio shortcuts that will save your life"
-author: "David U. Garibay-Treviño, MPP."
+author: "David U. Garibay-Treviño, M.Sc."
 date: "2023-11-09"
 categories: ["RStudio", "Shortcuts", "Snippets", "Panes", "Tabs", "Code completion"]
 toc: true
