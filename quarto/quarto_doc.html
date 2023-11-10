@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
-
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.3.353">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
 <meta name="author" content="David U. Garibay-Treviño, M.Sc.">
 <meta name="dcterms.date" content="2023-11-09">
-
 <title>RStudio shortcuts that will save your life</title>
 <style>
 code{white-space: pre-wrap;}
@@ -22,8 +19,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
-
 
 <script src="quarto_doc_files/libs/clipboard/clipboard.min.js"></script>
 <script src="quarto_doc_files/libs/quarto-html/quarto.js"></script>
@@ -35,14 +65,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="quarto_doc_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="quarto_doc_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="quarto_doc_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-
-
 </head>
-
 <body>
 
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full"><div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
       <h1 class="title">RStudio shortcuts that will save your life</h1>
                                 <div class="quarto-categories">
@@ -79,11 +105,10 @@ ul.task-list li input[type="checkbox"] {
   
   </header><div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
 <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-  <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Contents</h2>
+  <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Contents</h2>
    
   <ul>
-  <li><a href="#sec-intro" id="toc-sec-intro" class="nav-link active" data-scroll-target="#sec-intro"><span class="header-section-number">1</span> Introduction</a></li>
+<li><a href="#sec-intro" id="toc-sec-intro" class="nav-link active" data-scroll-target="#sec-intro"><span class="header-section-number">1</span> Introduction</a></li>
   <li><a href="#sec-insert" id="toc-sec-insert" class="nav-link" data-scroll-target="#sec-insert"><span class="header-section-number">2</span> Insert code</a></li>
   <li><a href="#edit_code" id="toc-edit_code" class="nav-link" data-scroll-target="#edit_code"><span class="header-section-number">3</span> Edit code</a></li>
   <li><a href="#sec-panes_tabs" id="toc-sec-panes_tabs" class="nav-link" data-scroll-target="#sec-panes_tabs"><span class="header-section-number">4</span> Move between panes and tabs</a></li>
@@ -93,23 +118,10 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#sec-snippets" id="toc-sec-snippets" class="nav-link" data-scroll-target="#sec-snippets"><span class="header-section-number">8</span> Snippets</a></li>
   <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">9</span> Conclusion</a></li>
   <li><a href="#sec-ref" id="toc-sec-ref" class="nav-link" data-scroll-target="#sec-ref"><span class="header-section-number">10</span> References</a></li>
-  </ul>
-</nav>
+  </ul></nav>
 </div>
-<main class="content quarto-banner-title-block" id="quarto-document-content">
-
-
-
-
-<!-- ::: {.callout-warning} -->
-<!-- - Add source column -->
-<!-- - Show document outline -->
-<!-- - Use the same format as the shortcuts help  -->
-<!-- - [commands palette](https://juliendiot42.github.io/RTips-Tricks/) -->
-<!-- - Jump to matching Brace/Paren -->
-<!-- ::: -->
-<section id="sec-intro" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> Introduction</h1>
+<main class="content quarto-banner-title-block" id="quarto-document-content"><section id="sec-intro" class="level1" data-number="1"><h1 data-number="1">
+<span class="header-section-number">1</span> Introduction</h1>
 <hr>
 <p>I remember when I started to code in R. I was highly inefficient and didn’t know any of the RStudio capabilities. I manually typed every part of the assignment operator (<code>&lt;</code> and then <code>-</code>), as well as every <code>#</code> at the start of all the lines I wanted to comment. The mouse was my main tool to open new scripts, change tabs, and close tabs. When I had to read or write any file I had to double check how it was written and where it was located. And when an important script was lost, I did not have any alternative other than to check every one of the folders where I thought it could be placed.</p>
 <p>At first I did not imagine that a blessed group of people already had thought about smart ways to tackle these and many other difficulties.</p>
@@ -133,28 +145,23 @@ ul.task-list li input[type="checkbox"] {
 <col style="width: 52%">
 <col style="width: 47%">
 </colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: center;">Windows <img src="figs/windows.png" class="img-fluid" style="width:5.0%"></th>
-<th style="text-align: center;">Mac <img src="figs/apple.png" class="img-fluid" style="width:6.5%"></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
+<thead><tr class="header">
+<th style="text-align: center;">Windows <img src="figs/windows.png" class="img-fluid" style="width:5.0%">
+</th>
+<th style="text-align: center;">Mac <img src="figs/apple.png" class="img-fluid" style="width:6.5%">
+</th>
+</tr></thead>
+<tbody><tr class="odd">
 <td style="text-align: center;">Alt+Shift+K</td>
 <td style="text-align: center;">Option+Shift+K</td>
-</tr>
-</tbody>
+</tr></tbody>
 </table>
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="figs/help.png" class="img-fluid figure-img" style="width:100.0%"></p>
-<figcaption class="figure-caption">How to check for the full list of shortcuts</figcaption>
-</figure>
+<figure class="figure"><p><img src="figs/help.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption class="figure-caption">How to check for the full list of shortcuts</figcaption></figure>
 </div>
-</section>
-<section id="sec-insert" class="level1" data-number="2">
-<h1 data-number="2"><span class="header-section-number">2</span> Insert code</h1>
+</section><section id="sec-insert" class="level1" data-number="2"><h1 data-number="2">
+<span class="header-section-number">2</span> Insert code</h1>
 <hr>
 <p>Want to create a new R Script? easy-peasy!</p>
 <table class="table">
@@ -163,18 +170,16 @@ ul.task-list li input[type="checkbox"] {
 <col style="width: 52%">
 <col style="width: 47%">
 </colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: center;">Windows <img src="figs/windows.png" class="img-fluid" style="width:5.0%"></th>
-<th style="text-align: center;">Mac <img src="figs/apple.png" class="img-fluid" style="width:6.5%"></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
+<thead><tr class="header">
+<th style="text-align: center;">Windows <img src="figs/windows.png" class="img-fluid" style="width:5.0%">
+</th>
+<th style="text-align: center;">Mac <img src="figs/apple.png" class="img-fluid" style="width:6.5%">
+</th>
+</tr></thead>
+<tbody><tr class="odd">
 <td style="text-align: center;">Ctr+Shift+N</td>
 <td style="text-align: center;">Cmd+Shift+N</td>
-</tr>
-</tbody>
+</tr></tbody>
 </table>
 <p>You want to assign an object? Instead of writting <code>&lt;-</code> key by key, you can do it directly by pressing:</p>
 <table class="table">
@@ -183,18 +188,16 @@ ul.task-list li input[type="checkbox"] {
 <col style="width: 52%">
 <col style="width: 47%">
 </colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: center;">Windows <img src="figs/windows.png" class="img-fluid" style="width:5.0%"></th>
-<th style="text-align: center;">Mac <img src="figs/apple.png" class="img-fluid" style="width:6.5%"></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
+<thead><tr class="header">
+<th style="text-align: center;">Windows <img src="figs/windows.png" class="img-fluid" style="width:5.0%">
+</th>
+<th style="text-align: center;">Mac <img src="figs/apple.png" class="img-fluid" style="width:6.5%">
+</th>
+</tr></thead>
+<tbody><tr class="odd">
 <td style="text-align: center;">Alt+-</td>
 <td style="text-align: center;">Option+-</td>
-</tr>
-</tbody>
+</tr></tbody>
 </table>
 <p>While concatenating functions or operations, forget about writing the pipe opearator by hand. You can insert it directly by pressing:</p>
 <table class="table">
@@ -203,18 +206,16 @@ ul.task-list li input[type="checkbox"] {
 <col style="width: 52%">
 <col style="width: 47%">
 </colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: center;">Windows <img src="figs/windows.png" class="img-fluid" style="width:5.0%"></th>
-<th style="text-align: center;">Mac <img src="figs/apple.png" class="img-fluid" style="width:6.5%"></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
+<thead><tr class="header">
+<th style="text-align: center;">Windows <img src="figs/windows.png" class="img-fluid" style="width:5.0%">
+</th>
+<th style="text-align: center;">Mac <img src="figs/apple.png" class="img-fluid" style="width:6.5%">
+</th>
+</tr></thead>
+<tbody><tr class="odd">
 <td style="text-align: center;">Ctrl+Shift+M</td>
 <td style="text-align: center;">Cmd+Shift+M</td>
-</tr>
-</tbody>
+</tr></tbody>
 </table>
 <div class="callout callout-style-default callout-tip callout-titled" title="Defining the default pipe">
 <div class="callout-header d-flex align-content-center">
@@ -234,8 +235,7 @@ Defining the default pipe
 </ul>
 <p>You can preset the pipe you want to insert by accessing <code>Global Options/Code/Editing</code> and defining if you want to use the native pipe (in case you don’t, the magrittr pipe will be automatically used).</p>
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="figs/pipe.png" class="img-fluid figure-img" style="width:60.0%"></p>
+<figure class="figure"><p><img src="figs/pipe.png" class="img-fluid figure-img" style="width:60.0%"></p>
 </figure>
 </div>
 </div>
@@ -248,18 +248,16 @@ Defining the default pipe
 <col style="width: 52%">
 <col style="width: 47%">
 </colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: center;">Windows <img src="figs/windows.png" class="img-fluid" style="width:5.0%"></th>
-<th style="text-align: center;">Mac <img src="figs/apple.png" class="img-fluid" style="width:6.5%"></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
+<thead><tr class="header">
+<th style="text-align: center;">Windows <img src="figs/windows.png" class="img-fluid" style="width:5.0%">
+</th>
+<th style="text-align: center;">Mac <img src="figs/apple.png" class="img-fluid" style="width:6.5%">
+</th>
+</tr></thead>
+<tbody><tr class="odd">
 <td style="text-align: center;">Ctrl+Alt+I</td>
 <td style="text-align: center;">Cmd+Option+I</td>
-</tr>
-</tbody>
+</tr></tbody>
 </table>
 <p><strong>Comment/uncomment current line selection</strong> is one of the first shortcuts that I learned, and currently it is still among the ones I use the most. Instead of manually adding <code>#</code> at the start of each line you want to comment, select the section of code you want to coment, and then and then use this shortcut. Since commenting code is very common, this shortcut will save you an enormous amount of time.</p>
 <table class="table">
@@ -268,18 +266,16 @@ Defining the default pipe
 <col style="width: 52%">
 <col style="width: 47%">
 </colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: center;">Windows <img src="figs/windows.png" class="img-fluid" style="width:5.0%"></th>
-<th style="text-align: center;">Mac <img src="figs/apple.png" class="img-fluid" style="width:6.5%"></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
+<thead><tr class="header">
+<th style="text-align: center;">Windows <img src="figs/windows.png" class="img-fluid" style="width:5.0%">
+</th>
+<th style="text-align: center;">Mac <img src="figs/apple.png" class="img-fluid" style="width:6.5%">
+</th>
+</tr></thead>
+<tbody><tr class="odd">
 <td style="text-align: center;">Ctrl+Shift+C</td>
 <td style="text-align: center;">Cmd+Shift+C</td>
-</tr>
-</tbody>
+</tr></tbody>
 </table>
 <p>In case you are looking how to organize your code scripts sections, subsections and other sorting levels, you will be happy to find about how to <strong>insert a new code section</strong>. This is ideal to have a good structure of your code, and the best part is that all the sections and subsections that you create will be visible in the code outline that is next to the <code>Source</code> button in Rstudio.</p>
 <table class="table">
@@ -288,18 +284,16 @@ Defining the default pipe
 <col style="width: 52%">
 <col style="width: 47%">
 </colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: center;">Windows <img src="figs/windows.png" class="img-fluid" style="width:5.0%"></th>
-<th style="text-align: center;">Mac <img src="figs/apple.png" class="img-fluid" style="width:6.5%"></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
+<thead><tr class="header">
+<th style="text-align: center;">Windows <img src="figs/windows.png" class="img-fluid" style="width:5.0%">
+</th>
+<th style="text-align: center;">Mac <img src="figs/apple.png" class="img-fluid" style="width:6.5%">
+</th>
+</tr></thead>
+<tbody><tr class="odd">
 <td style="text-align: center;">Ctrl+Shift+R</td>
 <td style="text-align: center;">Cmd+Shift+R</td>
-</tr>
-</tbody>
+</tr></tbody>
 </table>
 <p>Here’s how to <strong>Toggle document outline</strong> in case you were looking for it.</p>
 <table class="table">
@@ -308,18 +302,16 @@ Defining the default pipe
 <col style="width: 52%">
 <col style="width: 47%">
 </colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: center;">Windows <img src="figs/windows.png" class="img-fluid" style="width:5.0%"></th>
-<th style="text-align: center;">Mac <img src="figs/apple.png" class="img-fluid" style="width:6.5%"></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
+<thead><tr class="header">
+<th style="text-align: center;">Windows <img src="figs/windows.png" class="img-fluid" style="width:5.0%">
+</th>
+<th style="text-align: center;">Mac <img src="figs/apple.png" class="img-fluid" style="width:6.5%">
+</th>
+</tr></thead>
+<tbody><tr class="odd">
 <td style="text-align: center;">Ctrl+Shift+O</td>
 <td style="text-align: center;">Cmd+Shift+O</td>
-</tr>
-</tbody>
+</tr></tbody>
 </table>
 <div class="callout callout-style-default callout-tip callout-titled" title="Defining the level of the headers">
 <div class="callout-header d-flex align-content-center">
@@ -333,13 +325,15 @@ Defining the level of the headers
 <div class="callout-body-container callout-body">
 <p>The section breaks have a similar structure as the <a href="https://quarto.org/docs/authoring/markdown-basics.html#headings">Quarto and RMarkdown headings</a>. The number of <code>#</code>’s at the beginning of each line defines the level of the headers:</p>
 <ul>
-<li><code>#</code> stands for 1st level header,</li>
-<li><code>##</code> stands for 2nd level headers,</li>
-<li><code>###</code> stands for 3rd level headers, and so on.</li>
+<li>
+<code>#</code> stands for 1st level header,</li>
+<li>
+<code>##</code> stands for 2nd level headers,</li>
+<li>
+<code>###</code> stands for 3rd level headers, and so on.</li>
 </ul>
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="figs/outline.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figure class="figure"><p><img src="figs/outline.png" class="img-fluid figure-img" style="width:100.0%"></p>
 </figure>
 </div>
 </div>
@@ -351,22 +345,18 @@ Defining the level of the headers
 <col style="width: 52%">
 <col style="width: 47%">
 </colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: center;">Windows <img src="figs/windows.png" class="img-fluid" style="width:5.0%"></th>
-<th style="text-align: center;">Mac <img src="figs/apple.png" class="img-fluid" style="width:6.5%"></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
+<thead><tr class="header">
+<th style="text-align: center;">Windows <img src="figs/windows.png" class="img-fluid" style="width:5.0%">
+</th>
+<th style="text-align: center;">Mac <img src="figs/apple.png" class="img-fluid" style="width:6.5%">
+</th>
+</tr></thead>
+<tbody><tr class="odd">
 <td style="text-align: center;">Ctrl+I</td>
 <td style="text-align: center;">Cmd+I</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="edit_code" class="level1" data-number="3">
-<h1 data-number="3"><span class="header-section-number">3</span> Edit code</h1>
+</tr></tbody>
+</table></section><section id="edit_code" class="level1" data-number="3"><h1 data-number="3">
+<span class="header-section-number">3</span> Edit code</h1>
 <hr>
 <p>You can move lines of code up or down without having to copy them.</p>
 <table class="table">
@@ -375,18 +365,16 @@ Defining the level of the headers
 <col style="width: 52%">
 <col style="width: 47%">
 </colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: center;">Windows <img src="figs/windows.png" class="img-fluid" style="width:5.0%"></th>
-<th style="text-align: center;">Mac <img src="figs/apple.png" class="img-fluid" style="width:6.5%"></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
+<thead><tr class="header">
+<th style="text-align: center;">Windows <img src="figs/windows.png" class="img-fluid" style="width:5.0%">
+</th>
+<th style="text-align: center;">Mac <img src="figs/apple.png" class="img-fluid" style="width:6.5%">
+</th>
+</tr></thead>
+<tbody><tr class="odd">
 <td style="text-align: center;">Alt+Up/Down</td>
 <td style="text-align: center;">Option+Up/Down</td>
-</tr>
-</tbody>
+</tr></tbody>
 </table>
 <p>You can also copy lines of code up or down without having to copy and paste them.</p>
 <table class="table">
@@ -395,18 +383,16 @@ Defining the level of the headers
 <col style="width: 52%">
 <col style="width: 47%">
 </colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: center;">Windows <img src="figs/windows.png" class="img-fluid" style="width:5.0%"></th>
-<th style="text-align: center;">Mac <img src="figs/apple.png" class="img-fluid" style="width:6.5%"></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
+<thead><tr class="header">
+<th style="text-align: center;">Windows <img src="figs/windows.png" class="img-fluid" style="width:5.0%">
+</th>
+<th style="text-align: center;">Mac <img src="figs/apple.png" class="img-fluid" style="width:6.5%">
+</th>
+</tr></thead>
+<tbody><tr class="odd">
 <td style="text-align: center;">Shift+Alt+Up/Down</td>
 <td style="text-align: center;">Option+Cmd+Up/Down</td>
-</tr>
-</tbody>
+</tr></tbody>
 </table>
 <p>You can select code without using the mouse. To create or modify a selection using the keyboard, you have to maintain <code>Shift</code> pressed while moving your cursor. This will select anything that have been passed by your cursor. Once you stop pressing <code>Shift</code> you will stop modifying your selection.</p>
 <table class="table">
@@ -415,18 +401,16 @@ Defining the level of the headers
 <col style="width: 52%">
 <col style="width: 47%">
 </colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: center;">Windows <img src="figs/windows.png" class="img-fluid" style="width:5.0%"></th>
-<th style="text-align: center;">Mac <img src="figs/apple.png" class="img-fluid" style="width:6.5%"></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
+<thead><tr class="header">
+<th style="text-align: center;">Windows <img src="figs/windows.png" class="img-fluid" style="width:5.0%">
+</th>
+<th style="text-align: center;">Mac <img src="figs/apple.png" class="img-fluid" style="width:6.5%">
+</th>
+</tr></thead>
+<tbody><tr class="odd">
 <td style="text-align: center;">Shift+[Arrow]</td>
 <td style="text-align: center;">Shift+[Arrow]</td>
-</tr>
-</tbody>
+</tr></tbody>
 </table>
 <p>You can move your cursor directly to the start or the end of a line only with your keyboard following the next key combination:</p>
 <table class="table">
@@ -435,38 +419,35 @@ Defining the level of the headers
 <col style="width: 52%">
 <col style="width: 47%">
 </colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: center;">Windows <img src="figs/windows.png" class="img-fluid" style="width:5.0%"></th>
-<th style="text-align: center;">Mac <img src="figs/apple.png" class="img-fluid" style="width:6.5%"></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
+<thead><tr class="header">
+<th style="text-align: center;">Windows <img src="figs/windows.png" class="img-fluid" style="width:5.0%">
+</th>
+<th style="text-align: center;">Mac <img src="figs/apple.png" class="img-fluid" style="width:6.5%">
+</th>
+</tr></thead>
+<tbody><tr class="odd">
 <td style="text-align: center;">Alt+Left/Right</td>
 <td style="text-align: center;">Cmd+Left/Right</td>
-</tr>
-</tbody>
+</tr></tbody>
 </table>
 <p>You can also move your cursor to the start or the end of a word with the following shortcut:</p>
 <table class="table">
-<caption><strong>Jump to word</strong> (move cursor to start/end of word)</caption>
+<caption>
+<strong>Jump to word</strong> (move cursor to start/end of word)</caption>
 <colgroup>
 <col style="width: 52%">
 <col style="width: 47%">
 </colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: center;">Windows <img src="figs/windows.png" class="img-fluid" style="width:5.0%"></th>
-<th style="text-align: center;">Mac <img src="figs/apple.png" class="img-fluid" style="width:6.5%"></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
+<thead><tr class="header">
+<th style="text-align: center;">Windows <img src="figs/windows.png" class="img-fluid" style="width:5.0%">
+</th>
+<th style="text-align: center;">Mac <img src="figs/apple.png" class="img-fluid" style="width:6.5%">
+</th>
+</tr></thead>
+<tbody><tr class="odd">
 <td style="text-align: center;">Ctrl+Left/Right</td>
 <td style="text-align: center;">Option+Left/Right</td>
-</tr>
-</tbody>
+</tr></tbody>
 </table>
 <p>You can add multiple cursors to edit multiple lines of code simultaneously. For that you need to press the next combination of keys.</p>
 <table class="table">
@@ -475,18 +456,16 @@ Defining the level of the headers
 <col style="width: 52%">
 <col style="width: 47%">
 </colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: center;">Windows <img src="figs/windows.png" class="img-fluid" style="width:5.0%"></th>
-<th style="text-align: center;">Mac <img src="figs/apple.png" class="img-fluid" style="width:6.5%"></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
+<thead><tr class="header">
+<th style="text-align: center;">Windows <img src="figs/windows.png" class="img-fluid" style="width:5.0%">
+</th>
+<th style="text-align: center;">Mac <img src="figs/apple.png" class="img-fluid" style="width:6.5%">
+</th>
+</tr></thead>
+<tbody><tr class="odd">
 <td style="text-align: center;">Ctrl+Alt+Up/Down</td>
 <td style="text-align: center;">Ctrl+Option+Up/Down</td>
-</tr>
-</tbody>
+</tr></tbody>
 </table>
 <div class="callout callout-style-default callout-tip callout-titled" title="Advanced selection">
 <div class="callout-header d-flex align-content-center">
@@ -505,9 +484,8 @@ Advanced selection
 </ul>
 </div>
 </div>
-</section>
-<section id="sec-panes_tabs" class="level1" data-number="4">
-<h1 data-number="4"><span class="header-section-number">4</span> Move between panes and tabs</h1>
+</section><section id="sec-panes_tabs" class="level1" data-number="4"><h1 data-number="4">
+<span class="header-section-number">4</span> Move between panes and tabs</h1>
 <hr>
 <p>You can <strong>move focus to Source Editor</strong>, i.e., place the cursor in the active script, without taking your hands out of the keyboard with the following shortcut.</p>
 <table class="table">
@@ -516,18 +494,16 @@ Advanced selection
 <col style="width: 52%">
 <col style="width: 47%">
 </colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: center;">Windows <img src="figs/windows.png" class="img-fluid" style="width:5.0%"></th>
-<th style="text-align: center;">Mac <img src="figs/apple.png" class="img-fluid" style="width:6.5%"></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
+<thead><tr class="header">
+<th style="text-align: center;">Windows <img src="figs/windows.png" class="img-fluid" style="width:5.0%">
+</th>
+<th style="text-align: center;">Mac <img src="figs/apple.png" class="img-fluid" style="width:6.5%">
+</th>
+</tr></thead>
+<tbody><tr class="odd">
 <td style="text-align: center;">Ctrl+1</td>
 <td style="text-align: center;">Ctrl+1</td>
-</tr>
-</tbody>
+</tr></tbody>
 </table>
 <p>The same idea goes for the console. You can place the cursor in the Console by using:</p>
 <table class="table">
@@ -536,18 +512,16 @@ Advanced selection
 <col style="width: 52%">
 <col style="width: 47%">
 </colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: center;">Windows <img src="figs/windows.png" class="img-fluid" style="width:5.0%"></th>
-<th style="text-align: center;">Mac <img src="figs/apple.png" class="img-fluid" style="width:6.5%"></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
+<thead><tr class="header">
+<th style="text-align: center;">Windows <img src="figs/windows.png" class="img-fluid" style="width:5.0%">
+</th>
+<th style="text-align: center;">Mac <img src="figs/apple.png" class="img-fluid" style="width:6.5%">
+</th>
+</tr></thead>
+<tbody><tr class="odd">
 <td style="text-align: center;">Ctrl+2</td>
 <td style="text-align: center;">Ctrl+2</td>
-</tr>
-</tbody>
+</tr></tbody>
 </table>
 <p>I mainly use the shortcuts to move the cursor between the Source Editor (1) and the Console (2). In any case, you can focus the following elements inside RStudio just by changing the number of the key combination:</p>
 <ul>
@@ -568,18 +542,16 @@ Advanced selection
 <col style="width: 52%">
 <col style="width: 47%">
 </colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: center;">Windows <img src="figs/windows.png" class="img-fluid" style="width:5.0%"></th>
-<th style="text-align: center;">Mac <img src="figs/apple.png" class="img-fluid" style="width:6.5%"></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
+<thead><tr class="header">
+<th style="text-align: center;">Windows <img src="figs/windows.png" class="img-fluid" style="width:5.0%">
+</th>
+<th style="text-align: center;">Mac <img src="figs/apple.png" class="img-fluid" style="width:6.5%">
+</th>
+</tr></thead>
+<tbody><tr class="odd">
 <td style="text-align: center;">Ctrl+Alt+Left/Right</td>
 <td style="text-align: center;">Ctrl+Option+Left/Right</td>
-</tr>
-</tbody>
+</tr></tbody>
 </table>
 <p>The previous shortcut may not be practical if you have opened many tabs. If you know the name of the tab you want to go, you can open it directly using <strong>Switch to tab</strong> which shows a list of all the tabs. You can look for a specific tab by writing its name and access it by pressing <code>enter</code>.</p>
 <table class="table">
@@ -588,24 +560,20 @@ Advanced selection
 <col style="width: 52%">
 <col style="width: 47%">
 </colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: center;">Windows <img src="figs/windows.png" class="img-fluid" style="width:5.0%"></th>
-<th style="text-align: center;">Mac <img src="figs/apple.png" class="img-fluid" style="width:6.5%"></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
+<thead><tr class="header">
+<th style="text-align: center;">Windows <img src="figs/windows.png" class="img-fluid" style="width:5.0%">
+</th>
+<th style="text-align: center;">Mac <img src="figs/apple.png" class="img-fluid" style="width:6.5%">
+</th>
+</tr></thead>
+<tbody><tr class="odd">
 <td style="text-align: center;">Ctrl+Shift+.</td>
 <td style="text-align: center;">Ctrl+Shift+.</td>
-</tr>
-</tbody>
+</tr></tbody>
 </table>
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="figs/switch_tab.png" class="img-fluid figure-img" style="width:100.0%"></p>
-<figcaption class="figure-caption">Switch to tab…</figcaption>
-</figure>
+<figure class="figure"><p><img src="figs/switch_tab.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption class="figure-caption">Switch to tab…</figcaption></figure>
 </div>
 <p>You can <strong>close current document</strong> once you have finished working on it. This is very usefull to close multiple tabs without using the mouse.</p>
 <table class="table">
@@ -614,48 +582,41 @@ Advanced selection
 <col style="width: 52%">
 <col style="width: 47%">
 </colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: center;">Windows <img src="figs/windows.png" class="img-fluid" style="width:5.0%"></th>
-<th style="text-align: center;">Mac <img src="figs/apple.png" class="img-fluid" style="width:6.5%"></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
+<thead><tr class="header">
+<th style="text-align: center;">Windows <img src="figs/windows.png" class="img-fluid" style="width:5.0%">
+</th>
+<th style="text-align: center;">Mac <img src="figs/apple.png" class="img-fluid" style="width:6.5%">
+</th>
+</tr></thead>
+<tbody><tr class="odd">
 <td style="text-align: center;">Ctrl+W</td>
 <td style="text-align: center;">Cmd+W</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="sec-find" class="level1" data-number="5">
-<h1 data-number="5"><span class="header-section-number">5</span> Find files and functions</h1>
+</tr></tbody>
+</table></section><section id="sec-find" class="level1" data-number="5"><h1 data-number="5">
+<span class="header-section-number">5</span> Find files and functions</h1>
 <hr>
 <p><strong>Find/Replace text</strong> shows a find/replace utility were you can find everything that match your search, one by one (by pressing the <code>Next</code> or <code>Prev</code> buttons), or at once (pressing <code>All</code>). It also lets you replace all the matches with another text. When a part of the of code is previously selected, the search and replace utility will only look into the selected code by default. You can modify the behavior of this utility by modifying its different options.</p>
 <table class="table">
-<caption><strong>Find/Replace text</strong> (in active tab)</caption>
+<caption>
+<strong>Find/Replace text</strong> (in active tab)</caption>
 <colgroup>
 <col style="width: 52%">
 <col style="width: 47%">
 </colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: center;">Windows <img src="figs/windows.png" class="img-fluid" style="width:5.0%"></th>
-<th style="text-align: center;">Mac <img src="figs/apple.png" class="img-fluid" style="width:6.5%"></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
+<thead><tr class="header">
+<th style="text-align: center;">Windows <img src="figs/windows.png" class="img-fluid" style="width:5.0%">
+</th>
+<th style="text-align: center;">Mac <img src="figs/apple.png" class="img-fluid" style="width:6.5%">
+</th>
+</tr></thead>
+<tbody><tr class="odd">
 <td style="text-align: center;">Ctrl+F</td>
 <td style="text-align: center;">Cmd+F</td>
-</tr>
-</tbody>
+</tr></tbody>
 </table>
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="figs/find_replace.png" class="img-fluid figure-img" style="width:100.0%"></p>
-<figcaption class="figure-caption">Selecting all the text that matches with the word <code>fear</code></figcaption>
-</figure>
+<figure class="figure"><p><img src="figs/find_replace.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption class="figure-caption">Selecting all the text that matches with the word <code>fear</code></figcaption></figure>
 </div>
 <p>The shortcut <strong>Go to file/function</strong> brings up a search box that allows you to:</p>
 <ul>
@@ -669,24 +630,20 @@ Advanced selection
 <col style="width: 52%">
 <col style="width: 47%">
 </colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: center;">Windows <img src="figs/windows.png" class="img-fluid" style="width:5.0%"></th>
-<th style="text-align: center;">Mac <img src="figs/apple.png" class="img-fluid" style="width:6.5%"></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
+<thead><tr class="header">
+<th style="text-align: center;">Windows <img src="figs/windows.png" class="img-fluid" style="width:5.0%">
+</th>
+<th style="text-align: center;">Mac <img src="figs/apple.png" class="img-fluid" style="width:6.5%">
+</th>
+</tr></thead>
+<tbody><tr class="odd">
 <td style="text-align: center;">Ctrl+.</td>
 <td style="text-align: center;">Ctrl+.</td>
-</tr>
-</tbody>
+</tr></tbody>
 </table>
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="figs/basic_fun.png" class="img-fluid figure-img" style="width:100.0%"></p>
-<figcaption class="figure-caption">Looking for the <code>basic_fun</code> function among the files of a working directory</figcaption>
-</figure>
+<figure class="figure"><p><img src="figs/basic_fun.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption class="figure-caption">Looking for the <code>basic_fun</code> function among the files of a working directory</figcaption></figure>
 </div>
 <p>In my consideration the most powerful and usefull search tool in the RStudio IDE is <strong>Find in files</strong>. It lets you find any text that matches your search among <em>all the files present under your working directory</em> or in any directory that you specify. It will list you all the findings disaggregating them by location. Just as <strong>Find/replace text</strong> this utility also lets you replace all the matches with specified text.</p>
 <table class="table">
@@ -695,28 +652,23 @@ Advanced selection
 <col style="width: 52%">
 <col style="width: 47%">
 </colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: center;">Windows <img src="figs/windows.png" class="img-fluid" style="width:5.0%"></th>
-<th style="text-align: center;">Mac <img src="figs/apple.png" class="img-fluid" style="width:6.5%"></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
+<thead><tr class="header">
+<th style="text-align: center;">Windows <img src="figs/windows.png" class="img-fluid" style="width:5.0%">
+</th>
+<th style="text-align: center;">Mac <img src="figs/apple.png" class="img-fluid" style="width:6.5%">
+</th>
+</tr></thead>
+<tbody><tr class="odd">
 <td style="text-align: center;">Ctrl+Shift+F</td>
 <td style="text-align: center;">Cmd+Shift+F</td>
-</tr>
-</tbody>
+</tr></tbody>
 </table>
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="figs/find_in_files.png" class="img-fluid figure-img" style="width:100.0%"></p>
-<figcaption class="figure-caption">Looking for the word <code>and</code> among the RScripts of a given directory</figcaption>
-</figure>
+<figure class="figure"><p><img src="figs/find_in_files.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption class="figure-caption">Looking for the word <code>and</code> among the RScripts of a given directory</figcaption></figure>
 </div>
-</section>
-<section id="sec-run_code" class="level1" data-number="6">
-<h1 data-number="6"><span class="header-section-number">6</span> Run code</h1>
+</section><section id="sec-run_code" class="level1" data-number="6"><h1 data-number="6">
+<span class="header-section-number">6</span> Run code</h1>
 <hr>
 <p>The most basic way to execute code in the Source Editor is to put the cursor in the line (or selection) of code you want to run and use this shortcut. This will execute the current line (or selection) and move your cursor to the next part of the code. It is very useful when you are running your Scritps step by step.</p>
 <table class="table">
@@ -725,18 +677,16 @@ Advanced selection
 <col style="width: 52%">
 <col style="width: 47%">
 </colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: center;">Windows <img src="figs/windows.png" class="img-fluid" style="width:5.0%"></th>
-<th style="text-align: center;">Mac <img src="figs/apple.png" class="img-fluid" style="width:6.5%"></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
+<thead><tr class="header">
+<th style="text-align: center;">Windows <img src="figs/windows.png" class="img-fluid" style="width:5.0%">
+</th>
+<th style="text-align: center;">Mac <img src="figs/apple.png" class="img-fluid" style="width:6.5%">
+</th>
+</tr></thead>
+<tbody><tr class="odd">
 <td style="text-align: center;">Ctrl+Enter</td>
 <td style="text-align: center;">Cmd+Enter</td>
-</tr>
-</tbody>
+</tr></tbody>
 </table>
 <p>This shortcut is similar to the previous one, except that the cursor will remain in its place after executing the code. It can be very useful, specially while making code tests or developing figures in <code>ggplot</code>, and you don’t want to move your cursor away every time the code is executed.</p>
 <table class="table">
@@ -745,18 +695,16 @@ Advanced selection
 <col style="width: 52%">
 <col style="width: 47%">
 </colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: center;">Windows <img src="figs/windows.png" class="img-fluid" style="width:5.0%"></th>
-<th style="text-align: center;">Mac <img src="figs/apple.png" class="img-fluid" style="width:6.5%"></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
+<thead><tr class="header">
+<th style="text-align: center;">Windows <img src="figs/windows.png" class="img-fluid" style="width:5.0%">
+</th>
+<th style="text-align: center;">Mac <img src="figs/apple.png" class="img-fluid" style="width:6.5%">
+</th>
+</tr></thead>
+<tbody><tr class="odd">
 <td style="text-align: center;">Alt+Enter</td>
 <td style="text-align: center;">Option+Enter</td>
-</tr>
-</tbody>
+</tr></tbody>
 </table>
 <p>Imagine that you have written a lot of lines in a script and you would like to run continue modifying it after restarting your computer You don’t have to run the code line by line until you arrive to a specific part of the code. With this shortcut you can place your cursor in a line and run everything before it. It is one of my favorites.</p>
 <table class="table">
@@ -765,18 +713,16 @@ Advanced selection
 <col style="width: 52%">
 <col style="width: 47%">
 </colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: center;">Windows <img src="figs/windows.png" class="img-fluid" style="width:5.0%"></th>
-<th style="text-align: center;">Mac <img src="figs/apple.png" class="img-fluid" style="width:6.5%"></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
+<thead><tr class="header">
+<th style="text-align: center;">Windows <img src="figs/windows.png" class="img-fluid" style="width:5.0%">
+</th>
+<th style="text-align: center;">Mac <img src="figs/apple.png" class="img-fluid" style="width:6.5%">
+</th>
+</tr></thead>
+<tbody><tr class="odd">
 <td style="text-align: center;">Ctrl+Alt+B</td>
 <td style="text-align: center;">Ctrl+Option+B</td>
-</tr>
-</tbody>
+</tr></tbody>
 </table>
 <p>This is the complement of the previous shortcut. After placing the cursor in a specific line, you can run the rest of the code by using:</p>
 <table class="table">
@@ -785,43 +731,33 @@ Advanced selection
 <col style="width: 52%">
 <col style="width: 47%">
 </colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: center;">Windows <img src="figs/windows.png" class="img-fluid" style="width:5.0%"></th>
-<th style="text-align: center;">Mac <img src="figs/apple.png" class="img-fluid" style="width:6.5%"></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
+<thead><tr class="header">
+<th style="text-align: center;">Windows <img src="figs/windows.png" class="img-fluid" style="width:5.0%">
+</th>
+<th style="text-align: center;">Mac <img src="figs/apple.png" class="img-fluid" style="width:6.5%">
+</th>
+</tr></thead>
+<tbody><tr class="odd">
 <td style="text-align: center;">Ctrl+Alt+E</td>
 <td style="text-align: center;">Ctrl+Option+E</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="sec-auto" class="level1" data-number="7">
-<h1 data-number="7"><span class="header-section-number">7</span> Code completion</h1>
+</tr></tbody>
+</table></section><section id="sec-auto" class="level1" data-number="7"><h1 data-number="7">
+<span class="header-section-number">7</span> Code completion</h1>
 <hr>
 <p>Once you start typing, a completion list will pop up showing the names of functions, objects and snippets that match your text. If the list is not shown, you can make it appear by pressing <code>Tab</code> after typing something. Inside the list use the <code>Up</code>/<code>Down</code> arrows to move between the suggestions, and press <code>Enter</code> or <code>Tab</code> to select an option. To exit the completion list without making a selection just press <code>Esc</code>.</p>
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="figs/code_completion.png" class="img-fluid figure-img" style="width:85.0%"></p>
-<figcaption class="figure-caption">Code completion of <code>read</code></figcaption>
-</figure>
+<figure class="figure"><p><img src="figs/code_completion.png" class="img-fluid figure-img" style="width:85.0%"></p>
+<figcaption class="figure-caption">Code completion of <code>read</code></figcaption></figure>
 </div>
 <p>While using functions, you can list their arguments by pressing <code>Tab</code> or <code>Ctrl+Space</code> inside the function parentheses. As in the previous case, you have to use the <code>Up</code>/<code>Down</code> arrows to move between the options and press <code>Enter</code> or <code>Tab</code> once you have made your selection. This can be extremely useful if you want to be very specific about the arguments that are used inside of a function.</p>
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="figs/fun_completion.png" class="img-fluid figure-img" style="width:85.0%"></p>
-<figcaption class="figure-caption">Showing the arguments of the <code>read.csv</code> function</figcaption>
-</figure>
+<figure class="figure"><p><img src="figs/fun_completion.png" class="img-fluid figure-img" style="width:85.0%"></p>
+<figcaption class="figure-caption">Showing the arguments of the <code>read.csv</code> function</figcaption></figure>
 </div>
 <p>If you are using paths to read or write files, RStudio also has a completion tool to speed things up. To enter the path completion list you have to write quotation marks <code>""</code> and press <code>Tab</code> while your cursor is inside. A list showing the folders and files of your current working directory will appear. You can navigate between the options using the <code>Up</code>/<code>Down</code> arrows or you can type the name of the file/folder you want to go. Press <code>Enter</code> or <code>Tab</code> to make your selection. If you have accessed a new folder the process will repeat until you select a file.</p>
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="figs/path_completion.png" class="img-fluid figure-img" style="width:85.0%"></p>
-<figcaption class="figure-caption">Path completion while reading csv files</figcaption>
-</figure>
+<figure class="figure"><p><img src="figs/path_completion.png" class="img-fluid figure-img" style="width:85.0%"></p>
+<figcaption class="figure-caption">Path completion while reading csv files</figcaption></figure>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled" title="Tips for file navigation">
 <div class="callout-header d-flex align-content-center">
@@ -835,53 +771,61 @@ Tips for file navigation
 <div class="callout-body-container callout-body">
 <p>While navigating locations to save or read files, it is important to consider the following:</p>
 <ul>
-<li><code>""</code> starts navigation at your <em>current working directory</em>,</li>
-<li><code>"/"</code> starts navigation at you <em>root directory</em>, and</li>
-<li><code>"../"</code> starts navigation <em>one level above</em> the working directory.</li>
+<li>
+<code>""</code> starts navigation at your <em>current working directory</em>,</li>
+<li>
+<code>"/"</code> starts navigation at you <em>root directory</em>, and</li>
+<li>
+<code>"../"</code> starts navigation <em>one level above</em> the working directory.</li>
 </ul>
 </div>
 </div>
-</section>
-<section id="sec-snippets" class="level1" data-number="8">
-<h1 data-number="8"><span class="header-section-number">8</span> Snippets</h1>
+</section><section id="sec-snippets" class="level1" data-number="8"><h1 data-number="8">
+<span class="header-section-number">8</span> Snippets</h1>
 <hr>
 <p>Snippets are pieces of re-usable boilerplate code. They are very useful to avoid the repetition of writing several lines of code since they are a way to automate the insertion of pre-made pieces of code.</p>
 <p>To insert a snippet you have to write it and then select it from a completion list. It will be inserted along with some text placeholders which you can fill in. To move to the next placeholder you have to press <code>Tab</code>.</p>
 <p>Let’s use the <code>fun</code> snippet, used to define new functions. First we have to write <code>fun</code> in an R script and select it from an autocompletion list. You will be able to recognize it because it has the <code>{snippet}</code> tag.</p>
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="figs/snippet_1.png" class="img-fluid figure-img" style="width:85.0%"></p>
+<figure class="figure"><p><img src="figs/snippet_1.png" class="img-fluid figure-img" style="width:85.0%"></p>
 </figure>
 </div>
 <p>Second, the <code>fun</code> snippet will be inserted with three placeholders: one to define the function <strong>name</strong>, another to define the function <strong>variables</strong>, and the last one to define the <strong>body</strong> of the function. Don’t forget to press <code>Tab</code> to move to the next placeholder once you finish filling them!</p>
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="figs/snippet_2.png" class="img-fluid figure-img" style="width:85.0%"></p>
+<figure class="figure"><p><img src="figs/snippet_2.png" class="img-fluid figure-img" style="width:85.0%"></p>
 </figure>
 </div>
 <p>Here’s a list of some useful snippets:</p>
 <ul>
-<li><code>fun</code> to declare a new function,</li>
-<li><code>lib</code> to declare a new library to be imported,</li>
-<li><code>mat</code> to insert a new matrix,</li>
-<li><code>for</code> to insert a for loop,</li>
-<li><code>while</code> to insert a while loop,</li>
-<li><code>if</code> to insert an <em>if</em> conditional statement,</li>
-<li><code>el</code> to insert and <em>else</em> conditional statement,</li>
-<li><code>ei</code> to insert and <em>else if</em> conditional statement,</li>
-<li><code>apply</code> to insert an apply function, and</li>
-<li><code>shiny</code> to insert a shiny app template.</li>
+<li>
+<code>fun</code> to declare a new function,</li>
+<li>
+<code>lib</code> to declare a new library to be imported,</li>
+<li>
+<code>mat</code> to insert a new matrix,</li>
+<li>
+<code>for</code> to insert a for loop,</li>
+<li>
+<code>while</code> to insert a while loop,</li>
+<li>
+<code>if</code> to insert an <em>if</em> conditional statement,</li>
+<li>
+<code>el</code> to insert and <em>else</em> conditional statement,</li>
+<li>
+<code>ei</code> to insert and <em>else if</em> conditional statement,</li>
+<li>
+<code>apply</code> to insert an apply function, and</li>
+<li>
+<code>shiny</code> to insert a shiny app template.</li>
 </ul>
 <p>Besides, <strong>you can customize and create your own snippets!</strong>. To do this, you have to access <code>Global Options/Code/Editing</code> and click into <em>Edit Snippets</em>.</p>
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="figs/snippet_3.png" class="img-fluid figure-img" style="width:60.0%"></p>
+<figure class="figure"><p><img src="figs/snippet_3.png" class="img-fluid figure-img" style="width:60.0%"></p>
 </figure>
 </div>
 <p>You can look for more details on how to create custom snippets at this <a href="https://appsilon.com/rstudio-shortcuts-and-tips/#:~:text=Reformat%20R%20scripts&amp;text=Ctrl%20%2B%20Shift%20%2B%20A%20%E2%80%93%20Does,selected%20part%20of%20a%20code">website</a>.</p>
-</section>
-<section id="conclusion" class="level1" data-number="9">
-<h1 data-number="9"><span class="header-section-number">9</span> Conclusion</h1>
+</section><section id="conclusion" class="level1" data-number="9"><h1 data-number="9">
+<span class="header-section-number">9</span> Conclusion</h1>
 <hr>
 <p>As we have seen here, there are several shortcuts and commands that are incorporated into the RStudio IDE. It will take you some time learning and getting used to them. You will practice some more than others, and that is normal. Every developer has different tasks and priorities. Little by little you will notice how you are incorporating them in your usual workflow, and eventually, you will know more tips and tricks than the ones listed in this site.</p>
 <p>In the meanwhile, I hope this is useful for you, and I wish you the best of lucks in your path developing R code!</p>
@@ -898,9 +842,8 @@ Custom keyboard shortcuts
 <p>Just one last thing. RStudio allows you to create and customize keyboard shortcuts in <code>Tools/Modify keyboard shortcuts</code> you can more details about this in <a href="https://docs.posit.co/ide/user/ide/guide/productivity/custom-shortcuts.html#:~:text=Modify%20a%20command's%20shortcut%20by,based%20on%20the%20keys%20entered.">this website</a>.</p>
 </div>
 </div>
-</section>
-<section id="sec-ref" class="level1" data-number="10">
-<h1 data-number="10"><span class="header-section-number">10</span> References</h1>
+</section><section id="sec-ref" class="level1" data-number="10"><h1 data-number="10">
+<span class="header-section-number">10</span> References</h1>
 <hr>
 <ul>
 <li><a href="https://support.posit.co/hc/en-us/articles/200711853-Keyboard-Shortcuts-in-the-RStudio-IDE">Keyboard Shortcuts in the RStudio IDE</a></li>
@@ -910,11 +853,11 @@ Custom keyboard shortcuts
 <li><a href="https://docs.posit.co/ide/user/ide/guide/productivity/custom-shortcuts.html#:~:text=Modify%20a%20command's%20shortcut%20by,based%20on%20the%20keys%20entered.">Custom Shortcuts - RStudio User Guide</a></li>
 <li><a href="https://juliendiot42.github.io/RTips-Tricks/#73_Add_project_templates">R Tips &amp; Tricks</a></li>
 </ul>
-</section>
-
-</main>
-<!-- /main column -->
-<script id="quarto-html-after-body" type="application/javascript">
+<div class="cell">
+<details><summary>Show the code</summary><div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">n_samp</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/sample.html">sample</a></span><span class="op">(</span>x <span class="op">=</span> <span class="fl">100</span>, size <span class="op">=</span> <span class="fl">5</span>, replace <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+</section></main><!-- /main column --><script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");
