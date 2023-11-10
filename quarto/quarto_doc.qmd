@@ -14,13 +14,7 @@ format: html
 editor: visual
 ---
 
-<!-- ::: {.callout-warning} -->
-<!-- - Add source column -->
-<!-- - Show document outline -->
-<!-- - Use the same format as the shortcuts help  -->
-<!-- - [commands palette](https://juliendiot42.github.io/RTips-Tricks/) -->
-<!-- - Jump to matching Brace/Paren -->
-<!-- ::: -->
+
 
 # Introduction {#sec-intro}
 
@@ -429,3 +423,12 @@ Just one last thing. RStudio allows you to create and customize keyboard shortcu
 -   [6 RStudio Keyboard Shortcuts (that will change your life)](https://www.youtube.com/watch?v=U373PGg8Y_0&ab_channel=BusinessScience)
 -   [Custom Shortcuts - RStudio User Guide](https://docs.posit.co/ide/user/ide/guide/productivity/custom-shortcuts.html#:~:text=Modify%20a%20command's%20shortcut%20by,based%20on%20the%20keys%20entered.)
 -   [R Tips & Tricks](https://juliendiot42.github.io/RTips-Tricks/#73_Add_project_templates)
+
+
+```{r}
+#| code-fold: true
+#| code-summary: "Show the code"
+#| echo: true
+
+n_samp <- sample(x = 100, size = 5, replace = FALSE)
+```
